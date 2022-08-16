@@ -1,15 +1,17 @@
 import React from 'react'
 
-import CssBaseline from '@mui/material/CssBaseline';
-
 import Navbar from '../src/Navbar';
+import Footer from '../src/Footer';
 
 function Contact() {
   return (
-    <main>
-        <CssBaseline />
-        <Navbar />
-    </main>
+    <div>
+      <Navbar />
+      <main>
+          Contact Me
+      </main>
+      <Footer />
+    </div>
   );
 }
 

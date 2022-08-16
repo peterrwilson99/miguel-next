@@ -1,17 +1,18 @@
 import React from 'react'
 
-import CssBaseline from '@mui/material/CssBaseline';
-
 import Navbar from '../src/Navbar';
+import Footer from '../src/Footer';
 import ProjectGrid from '../src/ProjectGrid';
 
 function Projects() {
   return (
-    <main>
-        <CssBaseline />
-        <Navbar />
-        <ProjectGrid />
-    </main>
+    <div>
+      <Navbar />
+      <main>
+          <ProjectGrid />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
