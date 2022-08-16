@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Dummy Project 1",
+        "image": "https://source.unsplash.com/random",
+        "description": "Place description here, \nNew lines work aswell.\nwow my project is so cool, hire me"
+    },
+    {
+        "title": "Dummy Project 2",
+        "image": "https://source.unsplash.com/random",
+        "description": "Place description here for project 2, \nStill gas job by pitabreadwilson"
+    }
+]
