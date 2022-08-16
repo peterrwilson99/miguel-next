@@ -44,7 +44,7 @@ export default function Index() {
                 spacing={2}
                 justifyContent="center"
               >
-                <Button onClick={() => window.open('/projects')} variant="contained">Projects</Button>
+                <Button href='/projects' variant="contained">Projects</Button>
                 <Button onClick={() => window.open('/files/resume.pdf')} variant="outlined">Resume</Button>
               </Stack>
             </Container>

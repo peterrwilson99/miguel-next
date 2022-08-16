@@ -7,7 +7,7 @@ import ProjectGrid from '../src/ProjectGrid';
 function Projects() {
   return (
     <div>
-      <Navbar />
+      <Navbar currentPage="projects" />
       <main>
           <ProjectGrid />
       </main>

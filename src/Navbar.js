@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-function Navbar() {
+function Navbar(props) {
   return (
     <AppBar position="relative">
         <Toolbar>
@@ -20,21 +20,21 @@ function Navbar() {
               <Grid item xs="auto">
                 <Grid container spacing={2} justifyContent="space-between">
                   <Grid item xs="auto">
-                    <Button href='/about' style={{textTransform: 'unset'}}>
+                    <Button disabled={props.currentPage === 'about'} href='/about' style={{textTransform: 'unset'}}>
                       <Typography variant="h6" color="white" noWrap>
                         About Me
                       </Typography>
                     </Button>
                   </Grid>
                   <Grid item xs="auto">
-                    <Button href='/projects' style={{textTransform: 'unset'}}>
+                    <Button disabled={props.currentPage === 'projects'} href='/projects' style={{textTransform: 'unset'}}>
                       <Typography variant="h6" color="white" noWrap>
                         Projects
                       </Typography>
                     </Button>
                   </Grid>
                   <Grid item xs="auto">
-                    <Button href='/contact' style={{textTransform: 'unset'}}>
+                    <Button disabled={props.currentPage === 'contact'} href='/contact' style={{textTransform: 'unset'}}>
                       <Typography variant="h6" color="white" noWrap>
                         Contact
                       </Typography>

@@ -6,7 +6,7 @@ import Footer from '../src/Footer';
 function About() {
   return (
     <div>
-      <Navbar />
+      <Navbar currentPage="about"/>
       <main>
           About Me
       </main>
