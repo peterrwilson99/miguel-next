@@ -4,7 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import Navbar from '../src/Navbar';
 
-function About() {
+function Contact() {
   return (
     <main>
         <CssBaseline />
@@ -13,4 +13,4 @@ function About() {
   );
 }
 
-export default About;
+export default Contact;
