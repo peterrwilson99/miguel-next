@@ -45,7 +45,7 @@ function FeaturedProject(props) {
                         {selected_project.title}
                         </Typography>
                         <Typography variant="h5" color="inherit" paragraph>
-                            {selected_project.description}
+                            {selected_project.preview}
                         </Typography>
                         <Link variant="subtitle1" href="#">
                         {selected_project.date}

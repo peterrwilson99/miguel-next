@@ -13,7 +13,7 @@ import Navbar from '/src/Navbar';
 import Footer from '/src/Footer';
 import projects from '/src/projects.json';
 import Image from 'next/image';
-import { Grid } from '@mui/material';
+import { Grid, Paper } from '@mui/material';
 import FeaturedProject from '../src/FeaturedProject';
 
 export default function Index() {
@@ -67,6 +67,7 @@ export default function Index() {
             }}
           >
             <Container maxWidth="lg" className="p-12">
+              <Paper elevation={3} className="p-12">
                 <Grid container spacing={2} justifyContent="space-between">
                   <Grid item xs="6" className="p-8">
                     <Typography
@@ -102,6 +103,7 @@ export default function Index() {
                     <Image src="/static/images/miguel-thinking.webp" alt="" width="100%" height="100%" layout="responsive" objectFit="contain"/>
                   </Grid>
                 </Grid>
+              </Paper>
             </Container>
           </Box>
           <Box
@@ -144,10 +146,10 @@ export default function Index() {
             <Container maxWidth="xl" className="p-12">
               <Grid container spacing={2} justifyContent="center">
                 <Grid item xs="8">
-                  <Carousel animation="slide" interval={6000} height={400}>
-                    <FeaturedProject selected_project={projects[3]} />
+                  <Carousel animation="slide" interval={6000} height={600}>
+                    <FeaturedProject selected_project={projects[0]} />
+                    <FeaturedProject selected_project={projects[1]} />
                     <FeaturedProject selected_project={projects[2]} />
-                    <FeaturedProject selected_project={projects[9]} />
                   </Carousel>
                 </Grid>
                 <Grid item xs="4" columnSpacing="center" justify = "center">
@@ -160,6 +162,7 @@ export default function Index() {
                   <Typography
                     component="p"
                     variant="body1"
+                    className="text-xl"
                     gutterBottom>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 

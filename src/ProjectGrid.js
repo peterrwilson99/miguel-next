@@ -34,7 +34,7 @@ function ProjectGrid() {
                     {project.date}
                     </Typography>
                     <Typography>
-                    {project.description}
+                    {project.preview}
                     </Typography>
                 </CardContent>
                 <CardActions>
