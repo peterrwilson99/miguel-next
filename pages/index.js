@@ -97,7 +97,7 @@ export default function Index() {
                         soccer player and weightlifter, and spend most of my time away from the desk on different rec teams or searching 
                         for more drop-in soccer.<br/><br/><br/>
                     </Typography>
-                    <Button href='/about' color="secondary" variant="contained">About Me</Button>
+                    <Button href='/about' color="secondary" variant="outlined">About Me</Button>
                   </Grid>
                   <Grid item xs="6">
                     <Image src="/static/images/miguel-thinking.webp" alt="" width="100%" height="100%" layout="responsive" objectFit="contain"/>
