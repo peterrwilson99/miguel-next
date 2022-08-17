@@ -91,7 +91,7 @@ function ContactForm() {
             onClose={handleAlertClose} 
             severity={alert} 
             sx={{ width: '100%' }}>
-                This is a success message!
+                Email Sent!
             </Alert>
         </Snackbar>
         

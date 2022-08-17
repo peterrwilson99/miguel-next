@@ -6,18 +6,11 @@ const lightTheme = createTheme({
   palette: {
     primary: {
       main: '#FFBF69',
-    },
-    primaryDark: {
-      main: '#FF9F1C',
+      dark: '#FF9F1C',
     },
     secondary: {
       main: '#2EC4B6',
-    },
-    secondaryLight: {
-      main: '#CBF3F0',
-    },
-    fakeWhite: {
-      main: '#FDF8F4',
+      light: '#CBF3F0',
     },
     error: {
       main: red.A400,

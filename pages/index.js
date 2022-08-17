@@ -6,11 +6,19 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import Carousel from 'react-material-ui-carousel'
+import { useTheme } from '@mui/material/styles';
 
 import Navbar from '/src/Navbar';
 import Footer from '/src/Footer';
+import projects from '/src/projects.json';
+import Image from 'next/image';
+import { Grid } from '@mui/material';
+import FeaturedProject from '../src/FeaturedProject';
 
 export default function Index() {
+  const theme = useTheme();
+  console.log(theme.palette.secondary.light);
   return (
     <div>
         <CssBaseline />
@@ -50,6 +58,122 @@ export default function Index() {
             </Container>
           </Box>
           {/* End hero unit */}
+          {/* About Me Hype Unit */}
+          <Box
+            sx={{
+              bgcolor: theme.palette.secondary.light,
+              pt: 8,
+              pb: 6,
+            }}
+          >
+            <Container maxWidth="lg" className="p-12">
+                <Grid container spacing={2} justifyContent="space-between">
+                  <Grid item xs="6" className="p-8">
+                    <Typography
+                      component="h3"
+                      variant="h4"
+                      gutterBottom
+                      >
+                        Hi, I'm Miguel
+                      </Typography>
+                    <Typography
+                      component="p"
+                      variant="subtitle2"
+                      gutterBottom
+                      >
+                        Fourth Year Computer Engineering Student
+                    </Typography>
+                    <Typography
+                      component="p"
+                      variant="p"
+                      className="text-xl"
+                      gutterBottom
+                      >
+                        Welcome to my portfolio, where I will try and give you insight into who I am inside and out of the office.
+                        My passion for computers started from a young age while building PC's for gaming, and naturally progressed
+                        into Computer Engineering. University opened a world of new interesting projects and clubs that helped me find
+                        my passion for 3D modelling, hardware design, and INSERT ANOTHER THING HERE. Away from the desk, I am passionate
+                        soccer player and weightlifter, and spend most of my time away from the desk on different rec teams or searching 
+                        for more drop-in soccer.<br/><br/><br/>
+                    </Typography>
+                    <Button href='/about' color="secondary" variant="contained">About Me</Button>
+                  </Grid>
+                  <Grid item xs="6">
+                    <Image src="/static/images/miguel-thinking.webp" alt="" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+                  </Grid>
+                </Grid>
+            </Container>
+          </Box>
+          <Box
+            sx={{
+              bgcolor: theme.palette.primary.main,
+              pt: 8,
+              pb: 6,
+            }}
+          >
+            <Container maxWidth="sm" className="p-12">
+              <Typography
+              component="q"
+              variant="caption"
+              className="text-xl italic"
+              align="center"
+              >
+                Without hesitation, I recommend Miguel Manguerra for employment in the electronic
+                engineering field and have no doubts that he will contribute towards the success
+                of the company he chooses to work with.
+              </Typography>
+              <Typography
+              component="p"
+              variant="p"
+              className="text-xl p-8"
+              align="center"
+              >
+                Sergio Perez<br/> CTO of Ergonomyx Technologies Canada
+              </Typography>
+
+            </Container>
+          </Box>
+          {/* End of About Me Hype Unit */}
+          {/* Project overview section */}
+          <Box
+            sx={{
+              pt: 8,
+              pb: 6,
+            }}
+          >
+            <Container maxWidth="xl" className="p-12">
+              <Grid container spacing={2} justifyContent="center">
+                <Grid item xs="8">
+                  <Carousel animation="slide" interval={6000} height={400}>
+                    <FeaturedProject selected_project={projects[3]} />
+                    <FeaturedProject selected_project={projects[2]} />
+                    <FeaturedProject selected_project={projects[9]} />
+                  </Carousel>
+                </Grid>
+                <Grid item xs="4" columnSpacing="center" justify = "center">
+                  <Typography
+                    component="h3"
+                    variant="h4"
+                    gutterBottom>
+                      Projects
+                  </Typography>
+                  <Typography
+                    component="p"
+                    variant="body1"
+                    gutterBottom>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                      when an unknown printer took a galley of type and scrambled it to make a type 
+                      specimen book. <br/><br/><br/>
+                  </Typography>
+                  <Button href='/projects' color="primary" variant="contained">Projects</Button>
+                  
+                </Grid>
+              
+              </Grid>
+            </Container>
+          </Box>
+          {/* End of Project overview section */}
         </main>
         <Footer />
     </div>

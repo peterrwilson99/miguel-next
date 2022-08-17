@@ -4,8 +4,8 @@ import React from 'react'
 import projects from './projects.json';
 import Link from './Link'
 
-function FeaturedProject() {
-    const selected_project = projects[4];
+function FeaturedProject(props) {
+    const selected_project = props.selected_project;
     return (
         <Container sx={{ py: 8 }} maxWidth="xl">
             <Paper
