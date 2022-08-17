@@ -23,7 +23,7 @@
 
     {
         "title": "Ergonomyx Production Optimization",
-        "image": "../static/images/Manufacturing-Stock.jpg",
+        "image": "../static/images/Manufacturing-Stock-Photo.jpg",
         "description": "Optimized the manufacturing of desk and bike PCBAs by communicating Ergonomyx's needs with a multitude of PCB manufacturers. Redesigned each product's PCBs to integrate mechanical requirements and ensure easier assembly.",
         "date": "March 2021"
     },
@@ -69,7 +69,7 @@
         "description": "A custom-built boost converter designed in conjuction with the AUVIC electrical team to mimic the functions of the Benthos ALP-365, an acoustic underwater pinger used in the RoboSub competition",
         "date": "June 2019"
     },
-    
+
     {
         "title": "Nickel Cadmium Charger",
         "image": "../static/images/Charger-PCB.jpg",
