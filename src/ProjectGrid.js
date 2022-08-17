@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 import projects from './projects.json';
+import { CardActionArea } from '@mui/material';
 
 
 function ProjectGrid() {
@@ -21,11 +22,13 @@ function ProjectGrid() {
                 <Card
                 sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
-                <CardMedia
-                    component="img"
-                    image={project.image}
-                    alt="random"
-                />
+                <CardActionArea href={project.link}>
+                    <CardMedia
+                        component="img"
+                        image={project.image}
+                        alt="random"
+                    />
+                </CardActionArea>
                 <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
                     {project.title}

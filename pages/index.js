@@ -18,7 +18,6 @@ import FeaturedProject from '../src/FeaturedProject';
 
 export default function Index() {
   const theme = useTheme();
-  console.log(theme.palette.secondary.light);
   return (
     <div>
         <CssBaseline />
@@ -67,9 +66,9 @@ export default function Index() {
             }}
           >
             <Container maxWidth="lg" className="p-12">
-              <Paper elevation={3} className="p-12">
+              <Paper elevation={15} className="p-12">
                 <Grid container spacing={2} justifyContent="space-between">
-                  <Grid item xs="6" className="p-8">
+                  <Grid item xs={6} className="p-8">
                     <Typography
                       component="h3"
                       variant="h4"
@@ -99,7 +98,7 @@ export default function Index() {
                     </Typography>
                     <Button href='/about' color="secondary" variant="outlined">About Me</Button>
                   </Grid>
-                  <Grid item xs="6">
+                  <Grid item xs={6}>
                     <Image src="/static/images/miguel-thinking.webp" alt="" width="100%" height="100%" layout="responsive" objectFit="contain"/>
                   </Grid>
                 </Grid>

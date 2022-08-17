@@ -20,7 +20,6 @@ function ContactForm() {
         setMessage(event.target.value)
     };
     const sendEmail = (event) => {
-        console.log("Should Send Email Here");
         setEmail('');
         setSubject('');
         setMessage('');
