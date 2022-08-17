@@ -11,7 +11,7 @@ function Projects() {
     <div>
       <Navbar currentPage="projects" />
       <main>
-          <FeaturedProject selected_project={projects[4]} />
+          <FeaturedProject selected_project={projects[2]} />
           <ProjectGrid />
       </main>
       <Footer />
