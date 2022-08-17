@@ -12,8 +12,6 @@ import Button from '@mui/material/Button';
 import projects from './projects.json';
 
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 function ProjectGrid() {
   return (
     <Container sx={{ py: 8 }} maxWidth="xl">
@@ -31,6 +29,9 @@ function ProjectGrid() {
                 <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
                     {project.title}
+                    </Typography>
+                    <Typography gutterBottom variant="subtitle2" component="p">
+                    {project.date}
                     </Typography>
                     <Typography>
                     {project.description}
