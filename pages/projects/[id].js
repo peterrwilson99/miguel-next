@@ -1,4 +1,5 @@
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
+import { Button, Container, Grid, Typography } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Image from 'next/image';
 import React from 'react'
 import Footer from '../../src/Footer';
@@ -10,14 +11,17 @@ export default function Project({ projectData }) {
     <div>
       <Navbar />
       <main>
+        <Button href="/projects" variant="contained" startIcon={<ArrowBackIcon />} className="mt-8 ml-8">
+          Projects
+        </Button>
           <Container maxwidth="l" className="p-12">
           <Grid container spacing={2} justifyContent="space-between">
-            <Grid item xs="6" className="p-8">
+            <Grid item xs={6} className="p-8">
               <Typography
               component="h4"
               variant="h4"
               align="left"
-              gutterButtom>
+              gutterBottom>
                 {projectData.title}
             </Typography>
             <Typography
@@ -25,7 +29,7 @@ export default function Project({ projectData }) {
               variant="subtitle2"
               align="left"
               className="mt-2"
-              gutterButtom>
+              gutterBottom>
                 {projectData.date}
             </Typography>
             <Typography
@@ -36,7 +40,7 @@ export default function Project({ projectData }) {
                 {projectData.description}
             </Typography>
             </Grid>
-            <Grid item xs="6">
+            <Grid item xs={6}>
               <Image src={projectData.image} alt={projectData.title} width={624} height={424}/>
             </Grid>
           </Grid>
@@ -57,7 +61,6 @@ export async function getStaticPaths() {
       }
     }
   });
-  console.log(project_ids)
   return {
     paths: project_ids,
     fallback: false,
@@ -67,10 +70,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 // Fetch necessary data for the blog post using params.id
-  var projectData = projects[0];
+  var projectData;
   for(var project in projects){
-    if(project.id === params.id){
-      projectData = project;
+    if(projects[project].id === params.id){
+      projectData = projects[project];
       break;
     } else{
       continue

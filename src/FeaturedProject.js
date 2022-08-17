@@ -1,7 +1,6 @@
 
-import { Box, Container, Grid, Paper, Typography } from '@mui/material';
+import { Box, Button, Container, Grid, Paper, Typography } from '@mui/material';
 import React from 'react'
-import projects from './projects.json';
 import Link from './Link'
 
 function FeaturedProject(props) {
@@ -41,14 +40,16 @@ function FeaturedProject(props) {
                         pr: { md: 0 },
                         }}
                     >
-                        <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                        {selected_project.title}
-                        </Typography>
+                        <Link href={selected_project.link} style={{ textDecoration: 'none', color: "white"}}>
+                            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                                {selected_project.title}
+                            </Typography>
+                        </Link>
                         <Typography variant="h5" color="inherit" paragraph>
                             {selected_project.preview}
                         </Typography>
-                        <Link variant="subtitle1" href="#">
-                        {selected_project.date}
+                        <Link variant="subtitle1" href={selected_project.link}>
+                            {selected_project.date}
                         </Link>
                     </Box>
                     </Grid>

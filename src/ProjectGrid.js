@@ -38,7 +38,7 @@ function ProjectGrid() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">View</Button>
+                    <Button size="small" href={project.link}>View</Button>
                 </CardActions>
                 </Card>
             </Grid>
