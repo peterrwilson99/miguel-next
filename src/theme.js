@@ -9,7 +9,7 @@ const lightTheme = createTheme({
       dark: '#FF9F1C',
     },
     secondary: {
-      main: '#704F41',
+      main: '#3D5A6C',
     },
     error: {
       main: red.A400,
