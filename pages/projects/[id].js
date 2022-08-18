@@ -41,7 +41,7 @@ export default function Project({ projectData }) {
             </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Image src={projectData.image} alt={projectData.title} width={624} height={424}/>
+              <Image src={projectData.image} alt={projectData.title} width="100%" height="100%" layout="responsive" objectFit="contain"/>
             </Grid>
           </Grid>
           </Container>
