@@ -5,6 +5,7 @@ import React from 'react'
 import Footer from '../../src/Footer';
 import Navbar from '../../src/Navbar';
 import projects from '../../src/projects.json'
+import Carousel from 'react-material-ui-carousel';
 
 export default function Project({ projectData }) {
   return (
@@ -45,7 +46,16 @@ export default function Project({ projectData }) {
             </Grid>
           </Grid>
           </Container>
-          <Container maxwidth="m" className="p-12">
+          <Container maxwidth="sm">
+            <Carousel>
+              {projectData.carousel.map((imageSrc) => {
+                const key = imageSrc.slice(
+                  imageSrc.lastIndexOf('/') + 1,
+                  imageSrc.lastIndexOf('.'),
+                );
+                return (<Image src={imageSrc} key={key} alt={projectData.title} width="100%" height="100%" layout="responsive" objectFit="contain"/>)
+              })}
+            </Carousel>
           </Container>
       </main>
       <Footer />

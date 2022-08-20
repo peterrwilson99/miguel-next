@@ -8,7 +8,7 @@ function ContactForm() {
     const [subject, setSubject] = React.useState('')
     const [message, setMessage] = React.useState('')
     const [openAlert, setOpenAlert] = React.useState(false);
-    const [alert, setAlert] = React.useState('');
+    const [alert, setAlert] = React.useState('info');
 
     const handleEmailChange = (event) => {
         setEmail(event.target.value)
@@ -32,8 +32,9 @@ function ContactForm() {
         return;
     }
     
-    setAlert('');
+    
     setOpenAlert(false);
+    setAlert('info');
     };
 
 

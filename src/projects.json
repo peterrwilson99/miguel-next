@@ -5,7 +5,11 @@
         "preview": "Custom built a Lithium Ion battery pack made of 21700 cells alongside a BMS",
         "description": "Custom built a Lithium Ion battery pack made of 21700 cells. Configured as a 6S 9P battery, these batteries were chosen for their power density and rechargability. With a BMS for each battery pack, each individual pack integrated overcurrent, reverse voltage, and temperature protection features.",
         "date": "June 2022",
-        "carousel": [],
+        "carousel": [
+            "/static/images/Capstone-Group-Photo.jpg",
+            "/static/images/UVEEC-Team-Photo.jpg",
+            "/static/images/USV-LiOn-Battery.png"
+        ],
         "id": "usv-custom-lion-battery-design",
         "link": "/projects/usv-custom-lion-battery-design"
     },

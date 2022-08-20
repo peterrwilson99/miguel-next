@@ -15,6 +15,7 @@ function PastEmployers() {
                     maxWidth={250}
                     sx={{margin: "auto"}}
                     className="my-4"
+                    key={employer.employer}
                     >
                     <Image src={employer.image} alt={employer.employer} width={250} height={250} onClick={() => window.open(employer.link)} />
                 

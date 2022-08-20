@@ -11,7 +11,8 @@ def create_project_id(project):
 
 def main():
     with open(PROJECT_PATH, "r") as readObj:
-        projects = json.load(readObj)
+        str_file = readObj.read().replace('"../static','"/static')
+        projects = json.loads(str_file)
     for index, project in enumerate(projects):
         projects[index] = create_project_id(project)
     with open(PROJECT_PATH, "w") as writeObj:
