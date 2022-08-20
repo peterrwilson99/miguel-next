@@ -144,14 +144,14 @@ export default function Index() {
           >
             <Container maxWidth="xl" className="p-12">
               <Grid container spacing={2} justifyContent="center">
-                <Grid item xs="8">
+                <Grid item xs={8}>
                   <Carousel animation="slide" interval={6000} height={600}>
                     <FeaturedProject selected_project={projects[0]} />
                     <FeaturedProject selected_project={projects[1]} />
                     <FeaturedProject selected_project={projects[2]} />
                   </Carousel>
                 </Grid>
-                <Grid item xs="4" columnSpacing="center" justify = "center">
+                <Grid item xs={4} columnSpacing="center" justify = "center">
                   <Typography
                     component="h3"
                     variant="h4"
