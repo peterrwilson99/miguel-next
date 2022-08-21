@@ -112,5 +112,22 @@
         "carousel": [],
         "id": "nickel-cadmium-charger",
         "link": "/projects/nickel-cadmium-charger"
+    },
+    {
+        "title": "3D Printed Props",
+        "image": "/static/images/captain-rex.jpg",
+        "preview": "",
+        "description": "3D printed and painted my own props...",
+        "date": "August 2022",
+        "carousel": [
+            "/static/images/captain-rex.jpg",
+            "/static/images/bloodhound.jpg",
+            "/static/images/mando.jpg",
+            "/static/images/kylo-ren.jpg",
+            "/static/images/mando-gun.jpg",
+            "/static/images/fives.jpg"
+        ],
+        "id": "3d-printed-props",
+        "link": "/projects/3d-printed-props"
     }
 ]
