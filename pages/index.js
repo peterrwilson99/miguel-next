@@ -103,6 +103,7 @@ export default function Index() {
                         component="img"
                         image="/static/images/miguel-thinking.webp"
                         alt="random"
+                        className="p-8"
                     />
                     {/* <Image src="/static/images/miguel-thinking.webp" alt="" width="100%" height="100%" layout="responsive" objectFit="contain"/> */}
                   </Grid>
