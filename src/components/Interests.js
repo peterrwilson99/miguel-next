@@ -19,7 +19,7 @@ function Interests() {
         },
         {
             "name": "Gaming",
-            "description": "With a background in competitive gaming, I now enjoy taking sometime to allow my brain to relax and talk with friends.",
+            "description": "With a background in competitive gaming, I now enjoy taking time to relax and talk with my friends while playing some video games.",
             "icon": <GamesIcon sx={{width: 125, height: 125, margin: "auto",display: "block"}}/>,
         },
         {

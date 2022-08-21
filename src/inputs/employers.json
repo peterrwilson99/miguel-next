@@ -1,13 +1,13 @@
 [
     {
-        "image": "/static/images/dometic.webp",
-        "employer": "Dometic",
-        "link": "https://www.dometic.com/"
-    },
-    {
         "image": "/static/images/starfish.jpg",
         "employer": "Starfish Medical",
         "link": "https://starfishmedical.com/"
+    },
+    {
+        "image": "/static/images/dometic.webp",
+        "employer": "Dometic",
+        "link": "https://www.dometic.com/"
     },
     {
         "image": "/static/images/ergo.webp",

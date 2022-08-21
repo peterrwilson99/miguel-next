@@ -61,7 +61,7 @@ export default function Index() {
                 Projects
               </Button>
               <Button
-                onClick={() => window.open("/files/resume.pdf")}
+                onClick={() => window.open("/files/resume_new.pdf")}
                 variant="outlined"
               >
                 Resume
@@ -196,7 +196,7 @@ export default function Index() {
                   gutterBottom
                 >
                   Some of my current projects include an open source
-                  programmable load and a Voron 2.4 3D printer. Some of my past
+                  programmable load and a Voron 2.4 3D printer. My past
                   projects include a blood pressure emulator for testing medical
                   devices, a power distribution board to power an unmanned
                   surface water vehicle, and a battery tester jig to
