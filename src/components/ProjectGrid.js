@@ -28,7 +28,7 @@ function ProjectGrid(props) {
             {project_objs.map((project) => (
             <Grid key={project.id} item xs={12} sm={6} md={4}>
                 <Card
-                sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 7}}
+                sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 4}}
                 elevation={10}
                 >
                 <CardActionArea href={project.link}>

@@ -9,7 +9,7 @@ function Skills() {
             {skills.map((skill) => (
             <Grid key={skill.title} item xs={12} sm={6} md={4}>
                 <Card
-                sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 7}}
+                sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 4}}
                 elevation={15}
                 >   
                     <CardMedia
