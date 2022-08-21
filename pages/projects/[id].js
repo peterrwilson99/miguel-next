@@ -15,8 +15,8 @@ export default function Project({ projectData }) {
         <Button href="/projects" variant="contained" startIcon={<ArrowBackIcon />} className="mt-8 ml-8">
           Projects
         </Button>
-          <Container maxwidth="l" className="p-12">
-          <Grid container spacing={2} justifyContent="space-between">
+          <Container maxwidth="l" className="p-8">
+          <Grid container spacing={2} justifyContent="space-between" alignItems="center">
             <Grid item xs={6} className="p-8">
               <Typography
               component="h4"
@@ -42,20 +42,22 @@ export default function Project({ projectData }) {
             </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Image src={projectData.image} alt={projectData.title} width="100%" height="100%" layout="responsive" objectFit="contain"/>
+              {projectData.carousel.length != 0 ? (
+                <Carousel>
+                  {projectData.carousel.map((imageSrc) => {
+                    const key = imageSrc.slice(
+                      imageSrc.lastIndexOf('/') + 1,
+                      imageSrc.lastIndexOf('.'),
+                    );
+                    return (<Image src={imageSrc} key={key} alt={projectData.title} width="100%" height="100%" layout="responsive" objectFit="contain"/>)
+                  })}
+                </Carousel>
+                ) : <Image src={projectData.image} alt={projectData.title} width="100%" height="100%" layout="responsive" objectFit="contain"/>}
             </Grid>
           </Grid>
           </Container>
           <Container maxwidth="sm">
-            <Carousel>
-              {projectData.carousel.map((imageSrc) => {
-                const key = imageSrc.slice(
-                  imageSrc.lastIndexOf('/') + 1,
-                  imageSrc.lastIndexOf('.'),
-                );
-                return (<Image src={imageSrc} key={key} alt={projectData.title} width="100%" height="100%" layout="responsive" objectFit="contain"/>)
-              })}
-            </Carousel>
+            
           </Container>
       </main>
       <Footer />
