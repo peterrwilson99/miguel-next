@@ -1,7 +1,7 @@
 import { Button, Stack, Typography } from '@mui/material'
 import React from 'react'
 import Carousel from 'react-material-ui-carousel'
-import employers from './employers.json'
+import employers from '../inputs/employers.json'
 import Image from 'next/image';
 
 function PastEmployers(props) {

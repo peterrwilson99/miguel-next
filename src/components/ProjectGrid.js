@@ -9,7 +9,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-import projects from './projects.json';
+import projects from '../inputs/projects.json';
 import { CardActionArea } from '@mui/material';
 
 

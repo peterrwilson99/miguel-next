@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Navbar from '../src/Navbar';
-import Footer from '../src/Footer';
-import ContactForm from '../src/ContactForm';
+import Navbar from '../src/components/Navbar';
+import Footer from '../src/components/Footer';
+import ContactForm from '../src/components/ContactForm';
 import { Container, Typography } from '@mui/material';
 
 function Contact() {

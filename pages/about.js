@@ -2,11 +2,11 @@ import React from 'react'
 
 import { Avatar, Box, Container, Grid, Paper, Stack, Typography, useTheme } from '@mui/material';
 
-import Navbar from '../src/Navbar';
-import Footer from '../src/Footer';
-import PastEmployers from '../src/PastEmployers';
-import Skills from '../src/Skills';
-import Interests from '../src/Interests';
+import Navbar from '../src/components/Navbar';
+import Footer from '../src/components/Footer';
+import PastEmployers from '../src/components/PastEmployers';
+import Skills from '../src/components/Skills';
+import Interests from '../src/components/Interests';
 
 
 function About() {

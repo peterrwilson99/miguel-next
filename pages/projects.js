@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Navbar from '../src/Navbar';
-import Footer from '../src/Footer';
-import ProjectGrid from '../src/ProjectGrid';
-import FeaturedProject from '../src/FeaturedProject';
-import projects from '../src/projects.json';
+import Navbar from '../src/components/Navbar';
+import Footer from '../src/components/Footer';
+import ProjectGrid from '../src/components/ProjectGrid';
+import FeaturedProject from '../src/components/FeaturedProject';
+import projects from '../src/inputs/projects.json';
 
 function Projects() {
   return (

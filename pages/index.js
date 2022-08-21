@@ -9,12 +9,12 @@ import Container from '@mui/material/Container';
 import Carousel from 'react-material-ui-carousel'
 import { useTheme } from '@mui/material/styles';
 
-import Navbar from '/src/Navbar';
-import Footer from '/src/Footer';
-import projects from '/src/projects.json';
+import Navbar from '/src/components/Navbar';
+import Footer from '/src/components/Footer';
+import projects from '/src/inputs/projects.json';
 import Image from 'next/image';
 import { Grid, Paper } from '@mui/material';
-import FeaturedProject from '../src/FeaturedProject';
+import FeaturedProject from '../src/components/FeaturedProject';
 
 export default function Index() {
   const theme = useTheme();

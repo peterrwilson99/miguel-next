@@ -1,7 +1,7 @@
 import json
 import os
 
-PROJECT_PATH = os.path.join("src","projects.json")
+PROJECT_PATH = os.path.join("src","inputs","projects.json")
 
 def create_project_id(project):
     project["id"] = project["title"].replace(" ","-").replace("_","-").replace("/","").replace("\\","").replace("?","").lower()

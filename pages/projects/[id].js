@@ -2,9 +2,9 @@ import { Button, Container, Grid, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Image from 'next/image';
 import React from 'react'
-import Footer from '../../src/Footer';
-import Navbar from '../../src/Navbar';
-import projects from '../../src/projects.json'
+import Footer from '../../src/components/Footer';
+import Navbar from '../../src/components/Navbar';
+import projects from '../../src/inputs/projects.json'
 import Carousel from 'react-material-ui-carousel';
 
 export default function Project({ projectData }) {
