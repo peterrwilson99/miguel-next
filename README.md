@@ -8,13 +8,13 @@ The overall tech stack is as follows:
 - Vercel for Deployment
 - NextJS Routing and Rendering
 - MaterialUI for components
-- TailwindCSS for styles
+- TailwindCSS for styles (Barely used at all, essentially only using padding and text sizing classes)
 
 ## Installation and Running:
+
+Node and npm must be installed. Once installed run the following commands.
 
 ```sh
 npm install
 npm run dev
 ```
-
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/material-ui/getting-started/templates/) section.
