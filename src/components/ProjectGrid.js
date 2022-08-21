@@ -27,7 +27,7 @@ function ProjectGrid() {
                     <CardMedia
                         component="img"
                         image={project.image}
-                        alt="random"
+                        alt=""
                     />
                 </CardActionArea>
                 <CardContent sx={{ flexGrow: 1 }}>

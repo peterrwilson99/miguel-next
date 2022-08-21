@@ -15,7 +15,7 @@ function Skills() {
                     <CardMedia
                         component="img"
                         image={skill.image}
-                        alt="random"
+                        alt=""
                         sx={{
                             maxHeight: 400,
                         }}
