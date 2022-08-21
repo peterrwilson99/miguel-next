@@ -5,6 +5,7 @@
         "preview": "Designed of a custom built Blood Pressure Emulator for testing of new medical devices.",
         "description": "Worked with Salyx Medical to develop a custom Blood Pressure Emulator to test their Vitals Monitoring device. A custom built PCB was designed to receive feedback from flow and pressure sensors while driving two peristaltic pumps via stepper motor drivers. Led the design of the mechanical system to safely house all the electronics, tubing, and motors. Assisted with the development of the artifical limb and the testing of the PCB as well.",
         "date": "August 2022",
+        "type": "Professional",
         "carousel": [
             "/static/images/Capstone-Project.jpg",
             "/static/images/Capstone-Group-Photo.jpg"
@@ -18,6 +19,7 @@
         "preview": "Design of a fully automated Battery Testing Jig to test 2 LIR2450s simultaneously.",
         "description": "Designed and programmed an automated battery tester to test LIR2450 batteries for Ergonomyx. The tester integrated a battery charging IC to charge the battery and a programmable load to set the discharge current of both batteries. Then when testing begins, the device charges the batteries to full and when charge is complete, begins discharging both batteries through the load resistors. This tester would automatically monitor the discharge current, discharge cycles, battery voltage, battery temperature, and the discharge time of both batteries and store all the data in a micro SD card. After testing is complete, the data on the micro SD card can be outputted to an excel sheet for further analysis.",
         "date": "July 2022",
+        "type": "Professional",
         "carousel": [
             "/static/images/battery-tester-top.png",
             "/static/images/battery-tester-assembled.png",
@@ -33,6 +35,7 @@
         "preview": "Custom built a Lithium Ion battery pack made of 21700 cells alongside a BMS",
         "description": "Custom built a Lithium Ion battery pack made of 21700 cells. Configured as a 6S 9P battery, these batteries were chosen for their high power density and easy rechargability. A BMS integrated overcurrent, reverse voltage, and temperature protection features into the overall design of the battery pack.",
         "date": "June 2022",
+        "type": "Professional",
         "carousel": [
             "/static/images/USV-LiOn-Battery.png",
             "/static/images/usv-lion-battery-1.jpg",
@@ -47,6 +50,7 @@
         "preview": "Designed and prototyped the USV's 5V Buck Regulator",
         "description": "Designed and extensively tested the USV's 5V Buck Regulator. Soldered and tested it to ensure it's load regulating functionality at the expected load scenarios it will encounter on the USV. Studied the output with an oscilloscope to verify the output ripple voltage. Calculated the efficiency of the buck throughout multiple voltages. Also tested its Power Good output and Enable feature to ensure full functionality.",
         "date": "January 2022",
+        "type": "Professional",
         "carousel": [],
         "id": "usv-5v-power-supply",
         "link": "/projects/usv-5v-power-supply"
@@ -57,6 +61,7 @@
         "preview": "Designed a power distribution board to power UVEEC's Unmanned Surface water Vehicle (USV)",
         "description": "Designed a power distribution board to power and monitor UVEEC's Unmanned Surface water Vehicle (USV). This power board contains multiple voltage regulators to handle high amounts of current and steps down a 6S battery to 3V3, 5V, 7V4, and 12V rails for powering devices across the USV. It integrates important protection features such as overcurrent, emergency shutoff, reverse voltage, and ESD protection. The power board also keeps track of every power line to monitor the power drawn across the USV and can shut down any device when battery is running low.",
         "date": "December 2021",
+        "type": "Professional",
         "carousel": [
             "/static/images/Power-Board-PCB.jpg",
             "/static/images/power-board-1.jpg",
@@ -71,6 +76,7 @@
         "preview": "Optimized the manufacturing of desk and bike PCBs at Ergonomyx Technologies",
         "description": "Optimized the manufacturing of desk and bike PCBAs by communicating Ergonomyx's needs with a multitude of PCB manufacturers. Redesigned each product's PCBs to integrate mechanical requirements and ensure easier assembly.",
         "date": "March 2021",
+        "type": "Professional",
         "carousel": [],
         "id": "ergonomyx-production-optimization",
         "link": "/projects/ergonomyx-production-optimization"
@@ -81,6 +87,7 @@
         "preview": "Prototyped a USB-A/C charging PCB to harvest bike energy",
         "description": "Designed and prototyped a USB-A/C charging PCB that can convert Ergonomyx's Under Desk Bike harvested energy to charge a phone or tablet.",
         "date": "November 2020",
+        "type": "Professional",
         "carousel": [],
         "id": "usb-ac-charging-pcb",
         "link": "/projects/usb-ac-charging-pcb"
@@ -91,6 +98,7 @@
         "preview": "Applied different methods of reducing acoustic noise for Ergonomyx's Under Desk Bike",
         "description": "Researched different methods of reducing the acoustic noise generated by filtering capacitors. Conducted numerous acoustic tests to compare tantalum, aluminum polymer, and ceramic capacitors to find out which capacitor reduced the noise generated by the Under the Desk Bike.",
         "date": "September 2020",
+        "type": "Professional",
         "carousel": [],
         "id": "ergonomyx-research-and-development",
         "link": "/projects/ergonomyx-research-and-development"
@@ -101,6 +109,7 @@
         "preview": "Designed AUVIC's Railgun Control Board to control AUVIC's torpedo launchers",
         "description": "Designed and prototyped AUVIC's Railgun Control Board. This board was constructed to power and control the launch process of AUVIC's magnetic torpedo launcher for competing in RoboSub.",
         "date": "May 2020",
+        "type": "Professional",
         "carousel": [
             "/static/images/Railgun-Control-Board.png",
             "/static/images/railgun-1.jpg",
@@ -115,6 +124,7 @@
         "preview": "",
         "description": "Design of a custom built Arduino based quadcopter control board. This PCB was designed to distrubute the power from an 11.1V Lipo battery to 4 Electronic Speed Controllers (ESCs) and 1 stepper motor. In addition to that, the PCB utilizes RF communication alongside a gyroscope and altimeter.",
         "date": "April 2020",
+        "type": "Professional",
         "carousel": [],
         "id": "mic-control-board",
         "link": "/projects/mic-control-board"
@@ -125,6 +135,7 @@
         "preview": "",
         "description": "Updated a custom Communication Application Protocol Language (CAPL) CAN Calibration Protocol (CCP) system that utilized Vector's CANoe to automate functional testing on Dometic devices. This system was previously made for one specific Dometic product, but was updated to be easily configured for every Dometic device, current and future. ",
         "date": "February 2020",
+        "type": "Professional",
         "carousel": [],
         "id": "vector-canoe-automated-functional-testing",
         "link": "/projects/vector-canoe-automated-functional-testing"
@@ -135,6 +146,7 @@
         "preview": "",
         "description": "A custom-built boost converter designed in conjuction with the AUVIC electrical team to mimic the functions of the Benthos ALP-365, an acoustic underwater pinger used in the RoboSub competition",
         "date": "June 2019",
+        "type": "Professional",
         "carousel": [],
         "id": "underwater-pinger",
         "link": "/projects/underwater-pinger"
@@ -145,6 +157,7 @@
         "preview": "",
         "description": "Design of a custom-built Nickel Cadmium Charger for powering an underwater pinger. The usb powered charging circuit contains a voltage regulator that outputs 3 volts with 200 mA of current, and a red and green LED that indicated charging state and completion",
         "date": "March 2019",
+        "type": "Professional",
         "carousel": [],
         "id": "nickel-cadmium-charger",
         "link": "/projects/nickel-cadmium-charger"
@@ -155,6 +168,7 @@
         "preview": "",
         "description": "3D printed and painted my own set of props from my favorite TV shows, movies, and video games. Some examples are props from the Mandalorian, Apex Legends, and Star Wars: The Clone Wars. ",
         "date": "August 2022",
+        "type": "Personal",
         "carousel": [
             "/static/images/captain-rex.jpg",
             "/static/images/bloodhound.jpg",
@@ -172,6 +186,7 @@
         "preview": "",
         "description": "Designed 3D printed objects to solve a problem in my daily life. Some examples of this are the Yeti Rambler Handle and a dual spool holder for my 3D printer.",
         "date": "August 2022",
+        "type": "Personal",
         "carousel": [
             "/static/images/Yeti-Mug-CAD.png",
             "/static/images/Yeti-Mug-Printed.jpg",

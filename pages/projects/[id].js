@@ -43,7 +43,7 @@ export default function Project({ projectData }) {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               {projectData.carousel.length != 0 ? (
-                <Carousel navButtonsAlwaysVisible="true">
+                <Carousel navButtonsAlwaysVisible="true" animation="slide" interval={6000}>
                   {projectData.carousel.map((imageSrc) => {
                     const key = imageSrc.slice(
                       imageSrc.lastIndexOf('/') + 1,

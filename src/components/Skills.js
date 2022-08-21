@@ -1,4 +1,4 @@
-import { CardMedia, Grid, Paper, Typography } from '@mui/material'
+import { Card, CardMedia, Grid, Paper, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 import skills from '../inputs/skills.json'
@@ -8,8 +8,8 @@ function Skills() {
     <Grid container spacing={4}>
             {skills.map((skill) => (
             <Grid key={skill.title} item xs={12} sm={6} md={4}>
-                <Paper
-                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                <Card
+                sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 7}}
                 elevation={15}
                 >   
                     <CardMedia
@@ -36,7 +36,7 @@ function Skills() {
                             {skill.description}
                         </Typography>
                     </div>
-                </Paper>
+                </Card>
             </Grid>
             ))}
         </Grid>

@@ -12,15 +12,23 @@ import Button from '@mui/material/Button';
 import projects from '../inputs/projects.json';
 import { CardActionArea } from '@mui/material';
 
+function get_projects(project_type){
+    let project_objs = [];
+    for(let i = 0; i < projects.length; i++){
+        projects[i].type === project_type ? project_objs.push(projects[i]) : project_objs ;
+    }
+    return project_objs;
+}
 
-function ProjectGrid() {
-  return (
-    <Container sx={{ py: 8 }} maxWidth="xl">
+function ProjectGrid(props) {
+    var project_objs;
+    props.type ? project_objs = get_projects(props.type) : project_objs = projects;
+    return (
         <Grid container spacing={4}>
-            {projects.map((project) => (
+            {project_objs.map((project) => (
             <Grid key={project.id} item xs={12} sm={6} md={4}>
                 <Card
-                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 7}}
                 elevation={10}
                 >
                 <CardActionArea href={project.link}>
@@ -48,8 +56,7 @@ function ProjectGrid() {
             </Grid>
             ))}
         </Grid>
-    </Container>
-  )
+    )
 }
 
 export default ProjectGrid

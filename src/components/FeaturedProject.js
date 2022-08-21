@@ -17,6 +17,7 @@ function FeaturedProject(props) {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     backgroundImage: `url(${selected_project.image})`,
+                    minHeight: 400
                 }}
                 >
                 {/* Increase the priority of the hero background image */}
@@ -28,7 +29,7 @@ function FeaturedProject(props) {
                     bottom: 0,
                     right: 0,
                     left: 0,
-                    backgroundColor: 'rgba(0,0,0,.3)',
+                    backgroundColor: 'rgba(0,0,0,.4)',
                     }}
                 />
                 <Grid container>
