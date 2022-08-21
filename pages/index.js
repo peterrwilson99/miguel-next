@@ -61,7 +61,7 @@ export default function Index() {
                 Projects
               </Button>
               <Button
-                onClick={() => window.open("/files/resume_new.pdf")}
+                onClick={() => window.open("/static/resume_new.pdf")}
                 variant="outlined"
               >
                 Resume
