@@ -27,6 +27,7 @@ function ContactForm() {
     const handleValidation = () => {
         let formValid = true;
         email.includes("@") ? email : formValid = false;
+        email.includes(" ") ? formValid = false : email;
         fullname != '' ? fullname : formValid = false;
         subject != '' ? subject : formValid = false;
         message != '' ? message : formValid = false;
