@@ -13,7 +13,7 @@ import Navbar from '/src/components/Navbar';
 import Footer from '/src/components/Footer';
 import projects from '/src/inputs/projects.json';
 import Image from 'next/image';
-import { Grid, Paper } from '@mui/material';
+import { CardMedia, Grid, Paper } from '@mui/material';
 import FeaturedProject from '../src/components/FeaturedProject';
 
 export default function Index() {
@@ -67,8 +67,8 @@ export default function Index() {
           >
             <Container maxWidth="lg" className="p-12">
               <Paper elevation={15} className="p-12">
-                <Grid container spacing={2} justifyContent="space-between">
-                  <Grid item xs={6} className="p-8">
+                <Grid container justifyContent="space-between">
+                  <Grid item xs={12} sm={12} md={6} className="p-8">
                     <Typography
                       component="h3"
                       variant="h4"
@@ -93,13 +93,18 @@ export default function Index() {
                         My passion for computers started from a young age while building PC's for gaming, and naturally progressed
                         into Computer Engineering. University opened a world of new interesting projects and clubs that helped me find
                         my passion for 3D modelling, hardware design, and mechanical design. Away from the desk, I am passionate
-                        soccer player and weightlifter, and spend most of my time away from the desk on different rec teams or searching 
+                        soccer player and weightlifter, and spend most of my time on different rec teams or searching 
                         for more drop-in soccer.
                     </Typography>
                     <Button href='/about' color="secondary" variant="outlined">About Me</Button>
                   </Grid>
-                  <Grid item xs={6}>
-                    <Image src="/static/images/miguel-thinking.webp" alt="" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+                  <Grid item xs={12} sm={12} md={6}>
+                    <CardMedia
+                        component="img"
+                        image="/static/images/miguel-thinking.webp"
+                        alt="random"
+                    />
+                    {/* <Image src="/static/images/miguel-thinking.webp" alt="" width="100%" height="100%" layout="responsive" objectFit="contain"/> */}
                   </Grid>
                 </Grid>
               </Paper>
@@ -144,14 +149,14 @@ export default function Index() {
           >
             <Container maxWidth="xl" className="p-12">
               <Grid container spacing={2} justifyContent="center" alignItems="center" alignContent="center">
-                <Grid item xs={8}>
+                <Grid item xs={12} sm={12} md={8}>
                   <Carousel animation="slide" interval={6000} height={400}>
                     <FeaturedProject selected_project={projects[0]} />
                     <FeaturedProject selected_project={projects[1]} />
                     <FeaturedProject selected_project={projects[2]} />
                   </Carousel>
                 </Grid>
-                <Grid item xs={4} columnSpacing="center" justifyContent="center" >
+                <Grid item xs={12} sm={12} md={4} columnSpacing="center" justifyContent="center" >
                   <Typography
                     component="h3"
                     variant="h4"

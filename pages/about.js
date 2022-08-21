@@ -20,11 +20,13 @@ function About() {
       <Navbar currentPage="about"/>
       <main>
         <Container maxWidth="md" className="p-12">
-          <Paper className="p-12" elevation={15}>
-          <Stack direction="row" spacing={8} justifyContent="center" alignContent="center" alignItems="center" width="100%">
-            <Avatar className="text-center" alt="Miguel Manguerra" src="/static/images/miguel-thinking.webp" sx={{ width: 200, height: 200 }} />
-            <div>
-              <Typography
+          <Paper className="p-8" elevation={15}>
+          <Grid container spacing={3} direction="row" width="100%" justifyContent="center" alignItems="center" alignContent="center" sx={{ margin: "auto" }} >
+            <Grid item xs={12} sm={12} md={4} >
+              <Avatar className="text-center" alt="Miguel Manguerra" src="/static/images/miguel-thinking.webp" sx={{ width: 200, height: 200, margin: "auto" }} />
+            </Grid>
+            <Grid item xs={12} sm={12} md={7}>
+            <Typography
                 component="h1"
                 variant="h2"
                 align="center"
@@ -40,9 +42,9 @@ function About() {
                 >
                   Fourth Year Computer Engineering Student
               </Typography>
-            </div>
+            </Grid>
             
-          </Stack>
+          </Grid>
           <Typography
             component="p"
             variant="p"
@@ -76,7 +78,7 @@ function About() {
                   <Typography
                   component="p"
                   variant="p"
-                  className="text-white text-2xl"
+                  className="text-white p-8 text-2xl"
                   align="center"
                   gutterBottom
                   >

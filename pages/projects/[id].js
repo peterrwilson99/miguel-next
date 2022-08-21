@@ -17,7 +17,7 @@ export default function Project({ projectData }) {
         </Button>
           <Container maxwidth="l" className="p-8">
           <Grid container spacing={2} justifyContent="space-between" alignItems="center">
-            <Grid item xs={6} className="p-8">
+            <Grid item xs={12} sm={12} md={6} className="p-8">
               <Typography
               component="h4"
               variant="h4"
@@ -41,7 +41,7 @@ export default function Project({ projectData }) {
                 {projectData.description}
             </Typography>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={12} md={6}>
               {projectData.carousel.length != 0 ? (
                 <Carousel>
                   {projectData.carousel.map((imageSrc) => {
