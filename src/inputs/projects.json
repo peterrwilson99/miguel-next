@@ -1,14 +1,42 @@
 [
     {
+        "title": "ECE 499 Capstone Project: Blood Pressure Emulator",
+        "image": "/static/images/Capstone-Project.jpg",
+        "preview": "Designed of a custom built Blood Pressure Emulator for testing of new medical devices.",
+        "description": "Worked with Salyx Medical to develop a custom Blood Pressure Emulator to test their Vitals Monitoring device. A custom built PCB was designed to receive feedback from flow and pressure sensors while driving two peristaltic pumps via stepper motor drivers. Led the design of the mechanical system to safely house all the electronics, tubing, and motors. Assisted with the development of the artifical limb and the testing of the PCB as well.",
+        "date": "August 2022",
+        "carousel": [
+            "/static/images/Capstone-Project.jpg",
+            "/static/images/Capstone-Group-Photo.jpg"
+        ],
+        "id": "ece-499-capstone-project:-blood-pressure-emulator",
+        "link": "/projects/ece-499-capstone-project:-blood-pressure-emulator"
+    },
+    {
+        "title": "Ergonomyx Automated Battery Testing Jig",
+        "image": "/static/images/battery-tester-top.png",
+        "preview": "Design of a fully automated Battery Testing Jig to test 2 LIR2450s simultaneously.",
+        "description": "Designed and programmed an automated battery tester to test LIR2450 batteries for Ergonomyx. The tester integrated a battery charging IC to charge the battery and a programmable load to set the discharge current of both batteries. Then when testing begins, the device charges the batteries to full and when charge is complete, begins discharging both batteries through the load resistors. This tester would automatically monitor the discharge current, discharge cycles, battery voltage, battery temperature, and the discharge time of both batteries and store all the data in a micro SD card. After testing is complete, the data on the micro SD card can be outputted to an excel sheet for further analysis.",
+        "date": "July 2022",
+        "carousel": [
+            "/static/images/battery-tester-top.png",
+            "/static/images/battery-tester-assembled.png",
+            "/static/images/battery-tester-voltage.png",
+            "/static/images/battery-tester-temperature.png"
+        ],
+        "id": "ergonomyx-automated-battery-testing-jig",
+        "link": "/projects/ergonomyx-automated-battery-testing-jig"
+    },
+    {
         "title": "USV Custom LiOn Battery Design",
         "image": "/static/images/USV-LiOn-Battery.png",
         "preview": "Custom built a Lithium Ion battery pack made of 21700 cells alongside a BMS",
-        "description": "Custom built a Lithium Ion battery pack made of 21700 cells. Configured as a 6S 9P battery, these batteries were chosen for their power density and rechargability. With a BMS for each battery pack, each individual pack integrated overcurrent, reverse voltage, and temperature protection features.",
+        "description": "Custom built a Lithium Ion battery pack made of 21700 cells. Configured as a 6S 9P battery, these batteries were chosen for their high power density and easy rechargability. A BMS integrated overcurrent, reverse voltage, and temperature protection features into the overall design of the battery pack.",
         "date": "June 2022",
         "carousel": [
-            "/static/images/Capstone-Group-Photo.jpg",
-            "/static/images/UVEEC-Team-Photo.jpg",
-            "/static/images/USV-LiOn-Battery.png"
+            "/static/images/USV-LiOn-Battery.png",
+            "/static/images/usv-lion-battery-1.jpg",
+            "/static/images/usv-lion-battery-2.jpg"
         ],
         "id": "usv-custom-lion-battery-design",
         "link": "/projects/usv-custom-lion-battery-design"
@@ -29,7 +57,11 @@
         "preview": "Designed a power distribution board to power UVEEC's Unmanned Surface water Vehicle (USV)",
         "description": "Designed a power distribution board to power and monitor UVEEC's Unmanned Surface water Vehicle (USV). This power board contains multiple voltage regulators to handle high amounts of current and steps down a 6S battery to 3V3, 5V, 7V4, and 12V rails for powering devices across the USV. It integrates important protection features such as overcurrent, emergency shutoff, reverse voltage, and ESD protection. The power board also keeps track of every power line to monitor the power drawn across the USV and can shut down any device when battery is running low.",
         "date": "December 2021",
-        "carousel": [],
+        "carousel": [
+            "/static/images/Power-Board-PCB.jpg",
+            "/static/images/power-board-1.jpg",
+            "/static/images/power-board-2.jpg"
+        ],
         "id": "usv-power-distribution-board",
         "link": "/projects/usv-power-distribution-board"
     },
@@ -69,7 +101,11 @@
         "preview": "Designed AUVIC's Railgun Control Board to control AUVIC's torpedo launchers",
         "description": "Designed and prototyped AUVIC's Railgun Control Board. This board was constructed to power and control the launch process of AUVIC's magnetic torpedo launcher for competing in RoboSub.",
         "date": "May 2020",
-        "carousel": [],
+        "carousel": [
+            "/static/images/Railgun-Control-Board.png",
+            "/static/images/railgun-1.jpg",
+            "/static/images/railgun-2.jpg"
+        ],
         "id": "railgun-control-board",
         "link": "/projects/railgun-control-board"
     },
@@ -117,7 +153,7 @@
         "title": "3D Printed Props",
         "image": "/static/images/captain-rex.jpg",
         "preview": "",
-        "description": "3D printed and painted my own props...",
+        "description": "3D printed and painted my own set of props from my favorite TV shows, movies, and video games. Some examples are props from the Mandalorian, Apex Legends, and Star Wars: The Clone Wars. ",
         "date": "August 2022",
         "carousel": [
             "/static/images/captain-rex.jpg",
@@ -129,5 +165,20 @@
         ],
         "id": "3d-printed-props",
         "link": "/projects/3d-printed-props"
+    },
+    {
+        "title": "3D Printed Designs",
+        "image": "/static/images/Yeti-Mug-CAD.png",
+        "preview": "",
+        "description": "Designed 3D printed objects to solve a problem in my daily life. Some examples of this are the Yeti Rambler Handle and a dual spool holder for my 3D printer.",
+        "date": "August 2022",
+        "carousel": [
+            "/static/images/Yeti-Mug-CAD.png",
+            "/static/images/Yeti-Mug-Printed.jpg",
+            "/static/images/Dual-Spool-Holder-CAD.png",
+            "/static/images/Dual-Spool-Holder-printed.jpg"
+        ],
+        "id": "3d-printed-designs",
+        "link": "/projects/3d-printed-designs"
     }
 ]

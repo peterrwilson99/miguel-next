@@ -6,8 +6,8 @@
     },
     {
         "title": "Rapid Prototyping Skills",
-        "description": "Utilized multiple 3D printers (Prusa I3 MK3S+ and Anycubic I3 Mega) to quickly prototype CAD designs in PETG, PLA, TPU, ASA, and other materials. These CAD designs were modelled and simulated within SolidWorks 2021.",
-        "image": "https://images.unsplash.com/photo-1611117775350-ac3950990985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80"
+        "description": "Utilized multiple 3D printers (Prusa I3 MK3S+ and Anycubic I3 Mega) to quickly prototype CAD designs in PETG, PLA, TPU, ASA, and other materials. These CAD designs were modelled within SolidWorks.",
+        "image": "/static/images/3d-printing-setup.jpg"
     },
     {
         "title": "Teamwork & Communication",
@@ -17,11 +17,11 @@
     {
         "title": "Diverse Problem Solving Skills",
         "description": "Led a team of four to develop the firmware and hardware from scratch for a universal desk controller prototype.",
-        "image": "https://cdn.shopify.com/s/files/1/0639/2175/0261/products/3_-_Ergonomyx_Shoot_Jan_2020_-_Rectangular_-_Bamboo_Large_6ebf6630-6408-4057-a97a-955fbd10c43a.jpg?v=1658161690"
+        "image": "/static/images/ergo-stock.webp"
     },
     {
         "title": "Programming",
         "description": "Created custom scripts for various projects, with experience in C, C++ and Python.",
-        "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80"
+        "image": "/static/images/programming-stock.webp"
     }
 ]
