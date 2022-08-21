@@ -14,3 +14,7 @@ npm-debug.log*
 
 # Next.js
 /.next
+
+
+# environment variables
+.env*

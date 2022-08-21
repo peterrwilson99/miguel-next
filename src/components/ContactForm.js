@@ -4,14 +4,18 @@ import React from 'react'
 
 function ContactForm() {
 
-    const [email, setEmail] = React.useState('')
-    const [subject, setSubject] = React.useState('')
-    const [message, setMessage] = React.useState('')
+    const [email, setEmail] = React.useState('');
+    const [fullname, setFullname] = React.useState('');
+    const [subject, setSubject] = React.useState('');
+    const [message, setMessage] = React.useState('');
     const [openAlert, setOpenAlert] = React.useState(false);
     const [alert, setAlert] = React.useState('info');
 
     const handleEmailChange = (event) => {
         setEmail(event.target.value)
+    };
+    const handleFullnameChange = (event) => {
+        setFullname(event.target.value)
     };
     const handleSubjectChange = (event) => {
         setSubject(event.target.value)
@@ -19,12 +23,50 @@ function ContactForm() {
     const handleMessageChange = (event) => {
         setMessage(event.target.value)
     };
-    const sendEmail = (event) => {
+
+    const handleValidation = () => {
+        let formValid = true;
+        email.includes("@") ? email : formValid = false;
+        fullname != '' ? fullname : formValid = false;
+        subject != '' ? subject : formValid = false;
+        message != '' ? message : formValid = false;
+        return formValid;
+    }
+    const sendEmail = async (e) => {
+        e.preventDefault();
+    
+        if(!handleValidation()){
+            setOpenAlert(true);
+            setAlert("warning")
+            console.log("Not Valid Inputs");
+            return;
+        }
+        const res = await fetch("/api/sendgrid", {
+        body: JSON.stringify({
+            email: email,
+            fullname: fullname,
+            subject: subject,
+            message: message,
+        }),
+        headers: {
+            "Content-Type": "application/json",
+        },
+        method: "POST",
+        });
+
+        const { error } = await res.json();
+        if (error) {
+            setOpenAlert(true);
+            setAlert("error")
+            console.log(error);
+            return;
+        }
         setEmail('');
+        setFullname('');
         setSubject('');
         setMessage('');
         setOpenAlert(true);
-        setAlert("success")
+        setAlert("success");
     };
 
     const handleAlertClose = (event, reason) => {
@@ -36,7 +78,6 @@ function ContactForm() {
     setOpenAlert(false);
     setAlert('info');
     };
-
 
     return (
     <div className="p-12">
@@ -53,6 +94,13 @@ function ContactForm() {
                 label="Your Email"
                 value={email}
                 onChange={handleEmailChange}
+            />
+            <TextField
+                required
+                id="outlined-required"
+                label="Your Full Name"
+                value={fullname}
+                onChange={handleFullnameChange}
             />
             <TextField
                 required
@@ -91,7 +139,7 @@ function ContactForm() {
             onClose={handleAlertClose} 
             severity={alert} 
             sx={{ width: '100%' }}>
-                Email Sent!
+                {alert === 'success'? "Email Sent!": alert === 'warning' ? "Invalid inputs" : "Error Sending Email"}
             </Alert>
         </Snackbar>
         
