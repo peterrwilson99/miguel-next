@@ -151,7 +151,7 @@ export default function Index() {
             <Container maxWidth="xl" className="p-12">
               <Grid container spacing={2} justifyContent="center" alignItems="center" alignContent="center">
                 <Grid item xs={12} sm={12} md={8}>
-                  <Carousel animation="slide" interval={6000} height={400}>
+                  <Carousel navButtonsAlwaysVisible="true" animation="slide" interval={6000} height={400}>
                     <FeaturedProject selected_project={projects[0]} />
                     <FeaturedProject selected_project={projects[1]} />
                     <FeaturedProject selected_project={projects[2]} />
