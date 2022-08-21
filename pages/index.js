@@ -92,7 +92,7 @@ export default function Index() {
                         Welcome to my portfolio, where I will try and give you insight into who I am inside and out of the office.
                         My passion for computers started from a young age while building PC's for gaming, and naturally progressed
                         into Computer Engineering. University opened a world of new interesting projects and clubs that helped me find
-                        my passion for 3D modelling, hardware design, and INSERT ANOTHER THING HERE. Away from the desk, I am passionate
+                        my passion for 3D modelling, hardware design, and mechanical design. Away from the desk, I am passionate
                         soccer player and weightlifter, and spend most of my time away from the desk on different rec teams or searching 
                         for more drop-in soccer.
                     </Typography>
