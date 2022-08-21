@@ -1,0 +1,27 @@
+[
+    {
+        "title": "PCB Design Experience",
+        "description": "Currently building a Smart Power Distribution Board that was designed to power the USV’s electronics (BLDC motors, Central Controller Board, Raspberry Pi, etc.) while protecting against reverse voltage and overcurrent faults. The power drawn by external electronics were also measured alongside the health and status of the battery’s cells. An emergency shutdown feature was also implemented to manually shutdown the entire USV with one click of a button.",
+        "image": "/static/images/Power-Board-PCB.jpg"
+    },
+    {
+        "title": "Rapid Prototyping Skills",
+        "description": "Utilized multiple 3D printers (Prusa I3 MK3S+ and Anycubic I3 Mega) to quickly prototype CAD designs in PETG, PLA, TPU, ASA, and other materials. These CAD designs were modelled and simulated within SolidWorks 2021.",
+        "image": "https://images.unsplash.com/photo-1611117775350-ac3950990985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80"
+    },
+    {
+        "title": "Teamwork & Communication",
+        "description": "Collaborated with diverse engineering and non-engineering teams to develop creative solutions to complex problems.",
+        "image": "/static/images/UVEEC-Team-Photo.jpg"
+    },
+    {
+        "title": "Diverse Problem Solving Skills",
+        "description": "Led a team of four to develop the firmware and hardware from scratch for a universal desk controller prototype.",
+        "image": "https://cdn.shopify.com/s/files/1/0639/2175/0261/products/3_-_Ergonomyx_Shoot_Jan_2020_-_Rectangular_-_Bamboo_Large_6ebf6630-6408-4057-a97a-955fbd10c43a.jpg?v=1658161690"
+    },
+    {
+        "title": "Programming",
+        "description": "Created custom scripts for various projects, with experience in C, C++ and Python.",
+        "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80"
+    }
+]

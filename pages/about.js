@@ -1,14 +1,20 @@
 import React from 'react'
 
+import { Avatar, Box, Container, Grid, Paper, Stack, Typography, useTheme } from '@mui/material';
+
 import Navbar from '../src/Navbar';
 import Footer from '../src/Footer';
-import { Avatar, Box, Container, Paper, Stack, Typography, useTheme } from '@mui/material';
 import PastEmployers from '../src/PastEmployers';
-
+import Skills from '../src/Skills';
+import Interests from '../src/Interests';
 
 
 function About() {
   const theme = useTheme();
+  const miguel_hanging = [
+    '/static/images/Capstone-Group-Photo.jpg',
+    '/static/images/UVEEC-Team-Photo.jpg',
+  ]
   return (
     <div>
       <Navbar currentPage="about"/>
@@ -55,36 +61,37 @@ function About() {
             pt: 8,
             pb: 6,
           }}>
-            <Container maxWidth="md" className="p-12">
+            <Container maxWidth="lg" className="p-12">
             <Typography
                 component="h2"
-                variant="h3"
-                className="text-white"
+                variant="h2"
+                className="text-white mb-10"
+                align="center"
                 gutterBottom
                 >
-                Hola, My skills r gud
+                Clubs and Employers
               </Typography>
-              <Typography
-                component="p"
-                variant="body1"
-                className="text-white text-xl"
-                >
-                  Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                  It has roots in a piece of classical Latin literature from 45 BC, 
-                  making it over 2000 years old. Richard McClintock, a Latin professor 
-                  at Hampden-Sydney College in Virginia, looked up one of the more 
-                  obscure Latin words, consectetur, from a Lorem Ipsum passage, and going 
-                  through the cites of the word in classical literature, discovered the 
-                  undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 
-                  of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
-                  written in 45 BC. This book is a treatise on the theory of ethics, very popular 
-                  during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum 
-                  dolor sit amet..", comes from a line in section 1.10.32. The standard chunk 
-                  of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
-                  Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are 
-                  also reproduced in their exact original form, accompanied by English versions from 
-                  the 1914 translation by H. Rackham.
-                </Typography>
+              <Grid container className="p-8" alignItems="center">
+                <Grid key="employee-description" item xs={12} sm={6} md={6}>
+                  <Typography
+                  component="p"
+                  variant="p"
+                  className="text-white text-2xl"
+                  align="center"
+                  gutterBottom
+                  >
+                    Over the years I have had the opportunity to work on over a dozen great projects
+                    and teams that have shaped me into the engineer I am today. From hardware to 
+                    mechanical, I have had the blessing to widen my skills through these teams.
+                  </Typography>
+                </Grid>
+                <Grid key="past-employers" item xs={12} sm={6} md={6}>
+                  <PastEmployers width={250} showButton="true" />
+                </Grid>
+
+              </Grid>
+              
+              
             </Container>
         </Box>
         <Box
@@ -96,14 +103,41 @@ function About() {
             <Container maxWidth="xl" className="p-12">
             <Typography
               component="h2"
-              variant="h3"
+              variant="h2"
               align="center"
               gutterBottom
               >
-              Past Employers
+              Outside of the Office
             </Typography>
-            <PastEmployers />
-              
+            
+            <Interests />
+
+            <Typography
+            component="p"
+            variant="p"
+            align="center"
+            gutterBottom
+            >
+            </Typography>
+            </Container>
+        </Box>
+        <Box
+          className="text-white bgPcb"
+          sx={{
+            pt: 8,
+            pb: 6,
+          }}>
+            <Container maxWidth="xl" className="p-12">
+              <Typography
+                component="h2"
+                variant="h2"
+                align="center"
+                className="mb-12"
+                gutterBottom
+                >
+                Skills
+              </Typography>
+              <Skills /> 
             </Container>
         </Box>
       </main>
