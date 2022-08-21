@@ -1,7 +1,7 @@
 [
     {
         "title": "PCB Design Experience",
-        "description": "Currently building a Smart Power Distribution Board that was designed to power the USV’s electronics (BLDC motors, Central Controller Board, Raspberry Pi, etc.) while protecting against reverse voltage and overcurrent faults. The power drawn by external electronics were also measured alongside the health and status of the battery’s cells. An emergency shutdown feature was also implemented to manually shutdown the entire USV with one click of a button.",
+        "description": "Currently building a Smart Power Distribution Board that was designed to power the USV's electronics (BLDC motors, Central Controller Board, Raspberry Pi, etc.) while protecting against reverse voltage and overcurrent faults. The power drawn by external electronics were also measured alongside the health and status of the battery’s cells. An emergency shutdown feature was also implemented to manually shutdown the entire USV with one click of a button.",
         "image": "/static/images/Power-Board-PCB.jpg"
     },
     {
@@ -21,7 +21,12 @@
     },
     {
         "title": "Programming",
-        "description": "Created custom scripts for various projects, with experience in C, C++ and Python.",
+        "description": "Created custom scripts and firmware for various projects, with experience in C, C++ and Python.",
         "image": "/static/images/programming-stock.webp"
+    },
+    {
+        "title": "Leadership",
+        "description": "Led a team of four to design a minimum viable product for a Universal Smart Desk Controller that can control any type of existing motorized sit stand desk at Ergonomyx Technologies.",
+        "image": "/static/images/lead.jpg"
     }
 ]

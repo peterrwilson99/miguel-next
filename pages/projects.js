@@ -15,7 +15,7 @@ function Projects() {
     <div>
       <Navbar currentPage="projects" />
       <main>
-          <FeaturedProject selected_project={projects[2]} />
+          <FeaturedProject selected_project={projects[4]} />
           <Box className="bgPcb text-white">
           <Container sx={{ py: 8 }} maxWidth="xl" className="pt-0">
             <Stack direction="row" justifyContent="center" alignItems="center" justifyItems="center" spacing={2} sx={{margin: "auto"}} className="py-12">
