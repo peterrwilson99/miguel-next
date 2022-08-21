@@ -86,7 +86,7 @@ export default function Index() {
                     <Typography
                       component="p"
                       variant="p"
-                      className="text-xl"
+                      className="text-xl mb-10"
                       gutterBottom
                       >
                         Welcome to my portfolio, where I will try and give you insight into who I am inside and out of the office.
@@ -94,7 +94,7 @@ export default function Index() {
                         into Computer Engineering. University opened a world of new interesting projects and clubs that helped me find
                         my passion for 3D modelling, hardware design, and INSERT ANOTHER THING HERE. Away from the desk, I am passionate
                         soccer player and weightlifter, and spend most of my time away from the desk on different rec teams or searching 
-                        for more drop-in soccer.<br/><br/><br/>
+                        for more drop-in soccer.
                     </Typography>
                     <Button href='/about' color="secondary" variant="outlined">About Me</Button>
                   </Grid>
@@ -143,15 +143,15 @@ export default function Index() {
             }}
           >
             <Container maxWidth="xl" className="p-12">
-              <Grid container spacing={2} justifyContent="center">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" alignContent="center">
                 <Grid item xs={8}>
-                  <Carousel animation="slide" interval={6000} height={600}>
+                  <Carousel animation="slide" interval={6000} height={400}>
                     <FeaturedProject selected_project={projects[0]} />
                     <FeaturedProject selected_project={projects[1]} />
                     <FeaturedProject selected_project={projects[2]} />
                   </Carousel>
                 </Grid>
-                <Grid item xs={4} columnSpacing="center" justify = "center">
+                <Grid item xs={4} columnSpacing="center" justifyContent="center" >
                   <Typography
                     component="h3"
                     variant="h4"
@@ -161,12 +161,12 @@ export default function Index() {
                   <Typography
                     component="p"
                     variant="body1"
-                    className="text-xl"
+                    className="text-xl mb-10"
                     gutterBottom>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                       when an unknown printer took a galley of type and scrambled it to make a type 
-                      specimen book. <br/><br/><br/>
+                      specimen book.
                   </Typography>
                   <Button href='/projects' color="primary" variant="contained">Projects</Button>
                   
