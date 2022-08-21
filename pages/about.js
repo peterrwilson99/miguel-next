@@ -52,8 +52,7 @@ function About() {
             className="text-xl p-12"
             gutterBottom
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              A fourth-year computer engineering student with a year of extensive experience in product development, especially within the realm of hardware and firmware. Through his experience working with Ergonomyx Technologies, he has unparalleled leadership skills which led to the development of a new unreleased product for the company. He is currently working with his club, UVEEC (University of Victoria Environmental Engineering Club), as co-founder and electrical lead, to design and manufacture all the electronics on the club’s USV (Unmanned Surface Vessel). This includes the Power Distribution Board, Central Controller Board, custom built Lithium-Ion Battery pack, and many more. Miguel has a passion for electronics and technology, especially 3D printing, PCB design, and PC building. In his free time, Miguel is an avid weightlifter, enthusiastic soccer player, and loves to play competitive video games.
             </Typography>
           </Paper>
         </Container>
