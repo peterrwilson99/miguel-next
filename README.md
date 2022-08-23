@@ -2,7 +2,7 @@
 
 Portfolio for Miguel Manguerra for future job opportunities and a place to reflect on past work. 
 
-The overall tech stack is as follows:
+The overall tools used as follows:
 
 - React and JavaScript for language
 - Vercel for Deployment
