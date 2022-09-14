@@ -43,7 +43,7 @@ function About() {
                 <Avatar
                   className="text-center"
                   alt="Miguel Manguerra"
-                  src="/static/images/miguel-thinking.webp"
+                  src="/static/images/miguel-avatar.jpg"
                   sx={{ width: 200, height: 200, margin: "auto" }}
                 />
               </Grid>
