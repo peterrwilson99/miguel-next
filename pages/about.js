@@ -73,21 +73,20 @@ function About() {
               className="text-xl p-12"
               gutterBottom
             >
-              A fifth-year computer engineering student with a year of
-              extensive experience in product development, especially within the
-              realm of hardware and firmware. Through his experience working
-              with Ergonomyx Technologies, he has unparalleled leadership skills
+              A fifth-year computer engineering student with a year of extensive
+              experience in product development, especially within the realm of
+              hardware and firmware. Through his experience working with
+              Ergonomyx Technologies, he has unparalleled leadership skills
               which led to the development of a new unreleased product for the
-              company. He is currently working with his club, UVEEC (University
-              of Victoria Environmental Engineering Club), as co-founder and
-              electrical lead, to design and manufacture all the electronics on
-              the club's USV (Unmanned Surface Vessel). This includes the Power
-              Distribution Board, Central Controller Board, custom built
-              Lithium-Ion Battery pack, and many more. Miguel has a passion for
-              electronics and technology, especially 3D printing, PCB design,
-              and PC building. In his free time, Miguel is an avid weightlifter,
-              enthusiastic soccer player, and loves to play competitive video
-              games.
+              company. He is currently working with his club, UVEEC, as
+              co-founder, to design and manufacture all the electronics on the
+              club’s USV. He is also working on designing an underwater acoustic
+              pinger for his old club AUVIC, and is currently building his own
+              open source programmable electronic load as a personal project.
+              Miguel has a passion for electronics and technology, especially 3D
+              printing, PCB design, and PC building. In his free time, Miguel is
+              an avid weightlifter, enthusiastic soccer player, and loves to
+              play competitive video games.
             </Typography>
           </Paper>
         </Container>
