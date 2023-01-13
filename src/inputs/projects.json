@@ -1,5 +1,27 @@
 [
     {
+        "title": "Underwater Acoustic Pinger V2",
+        "image": "/static/images/Pinger-1.jpg",
+        "preview": "An underwater acoustic pinger designed to mimic the functions of the Benthos ALP-365 with extended features for usability.",
+        "description": "An underwater acoustic pinger that utilizes a piezo electric transducer to output sound waves in a specific frequency range (22KHz to 40 KHz) underwater. Integrates USB-C charging, smart battery protection, easy battery swapping with separate waterproof modules, a CAN bus, and more. Utilizes an STM32F4 processor to control the device and monitor its surroundings.",
+        "date": "January 2023",
+        "type": "Professional",
+        "carousel": [],
+        "id": "underwater-acoustic-pinger-v2",
+        "link": "/projects/underwater-acoustic-pinger-v2"
+    },
+    {
+        "title": "Open Source Programmable DC Electronic Load",
+        "image": "/static/images/elec-load-1.png",
+        "preview": "A PCB that is designed to test and verify the operation of power supplies and batteries.",
+        "description": "A testing device that is meant to verify the operation of power supplies and batteries for long periods of time. Designed to be affordable and accessible to makers and hobbyists for future improvements. Plugs directly into a laptop or PC via USB-C and allows the user to control it via serial commands. Tracks the temperature of the Device Under Test (DUT), internal temperature, current drawn, load voltage, and total power consumption. Controls its own fans to cool the PCB and the load resistors. Allows the user to set constant current, constant voltage, and constant power modes for a variety of testing procedures. ",
+        "date": "January 2023",
+        "type": "Professional",
+        "carousel": [],
+        "id": "open-source-programmable-dc-electronic-load",
+        "link": "/projects/open-source-programmable-dc-electronic-load"
+    },
+    {
         "title": "ECE 499 Capstone Project: Blood Pressure Emulator",
         "image": "/static/images/Capstone-Project.jpg",
         "preview": "A custom built Blood Pressure Emulator for testing new medical devices.",
@@ -22,7 +44,7 @@
         "type": "Professional",
         "carousel": [
             "/static/images/battery-tester-top.png",
-            "/static/images/battery-tester-assembled.png",
+            "/static/images/battery-tester-assembled.jpg",
             "/static/images/battery-tester-voltage.png",
             "/static/images/battery-tester-temperature.png"
         ],
@@ -195,5 +217,64 @@
         ],
         "id": "3d-printed-designs",
         "link": "/projects/3d-printed-designs"
+    },
+    {
+        "title": "Anycubic I3 Mega Modifications",
+        "image": "/static/images/Anycubic-1.jpg",
+        "preview": "A variety of upgrades to the Anycubic I3 Mega from supporting all metal hotends to replacing its motherboard and stepper motor drivers.",
+        "description": "Upgraded the hotend of my Anycubic I3 Mega to support an E3D all metal hotend for more stable temperature control and higher printing temperatures. Added lighting to the printer and replaced all the fans to Noctua fans for more silent printing. Replaced the motherboard and stepper motor drivers for faster printing and higher printing resolution. Replaced the original Bowden extruder with a direct drive system to increase extrusion reliability, lessen retractions, incorporate a wider range of filaments, and to print faster. ",
+        "date": "June 2020",
+        "type": "Personal",
+        "carousel": [
+            "/static/images/Anycubic-1.jpg",
+            "/static/images/Anycubic-2.jpg",
+            "/static/images/Anycubic-3.jpg"
+        ],
+        "id": "anycubic-i3-mega-modifications",
+        "link": "/projects/anycubic-i3-mega-modifications"
+    },
+    {
+        "title": "Voron 2.4 Build",
+        "image": "/static/images/Voron-16.jpg",
+        "preview": "An uncompromising large format 3D printer with a core XY belting system for high accuracy and fast printing speeds. ",
+        "description": "Built and assembled my own 350mm cubed Voron 2.4. Hand wired all the electronics, routed the cables, and custom made my own wiring harnesses. 3D printed the necessary parts and further upgrades. Upgraded its hotend to support different types of nozzle sizes easily and to have RGB LED lighting. Added chamber lighting and custom Klipper macros to optimize printing setup. Currently working on making the gantry lighter by optimizing the gantry's steel rails while adding a CAN bus to the entire system to reduce wires.",
+        "date": "December 2022",
+        "type": "Personal",
+        "carousel": [
+            "/static/images/Voron-1.jpg",
+            "/static/images/Voron-2.jpg",
+            "/static/images/Voron-3.jpg",
+            "/static/images/Voron-4.jpg",
+            "/static/images/Voron-5.jpg",
+            "/static/images/Voron-6.jpg",
+            "/static/images/Voron-7.jpg",
+            "/static/images/Voron-8.jpg",
+            "/static/images/Voron-9.jpg",
+            "/static/images/Voron-10.jpg",
+            "/static/images/Voron-11.jpg",
+            "/static/images/Voron-12.jpg",
+            "/static/images/Voron-13.jpg",
+            "/static/images/Voron-14.jpg",
+            "/static/images/Voron-15.jpg",
+            "/static/images/Voron-16.jpg"
+        ],
+        "id": "voron-2.4-build",
+        "link": "/projects/voron-2.4-build"
+    },
+    {
+        "title": "3D Printer Setups",
+        "image": "/static/images/printing-setup-4.jpg",
+        "preview": "A 3D printing shelf/enclosure to house my 3D printers cleanly and efficiently.",
+        "description": "Initially, I created my own shelves to house both my Anycubic I3 Mega and Prusa I3 MK3S. This was done to save space in my house but to also make it easier to maintain both printers. Later when I was starting to print ABS, PC, and Nylon parts I wanted an enclosure to reduce the fumes coming out from my printer. Then I decided to upgrade to an Ikea Lack system that used raspberry Pis to add Wifi to both of my printers. I also custom made my own touchscreen housing to house a 7 inch touchscreen controlling my Prusa I3 MK3S in its enclosure. Extra storage was added with drawers along the top of the Lack setup.",
+        "date": "June 2022",
+        "type": "Personal",
+        "carousel": [
+            "/static/images/printing-setup-1.jpg",
+            "/static/images/printing-setup-2.jpg",
+            "/static/images/printing-setup-3.jpg",
+            "/static/images/printing-setup-4.jpg"
+        ],
+        "id": "3d-printer-setups",
+        "link": "/projects/3d-printer-setups"
     }
 ]
