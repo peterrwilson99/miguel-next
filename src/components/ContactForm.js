@@ -1,8 +1,10 @@
-import { TextField, Stack, Button, Alert, Snackbar } from '@mui/material';
+import { TextField, Stack, Button, Alert, Snackbar, useTheme, useMediaQuery } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import React from 'react'
 
 function ContactForm() {
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
     const [email, setEmail] = React.useState('');
     const [fullname, setFullname] = React.useState('');
@@ -81,12 +83,12 @@ function ContactForm() {
     };
 
     return (
-    <div className="p-12">
+    <div className={isSmallScreen ? "p-4" : "p-12"}>
         <Stack
             direction="column"
             spacing={2}
             justifyContent="left"
-            className="p-8"
+            className={isSmallScreen ? "p-4" : "p-8"}
         >
             
             <TextField

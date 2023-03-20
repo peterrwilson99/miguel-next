@@ -3,14 +3,16 @@ import React from 'react'
 import Navbar from '../src/components/Navbar';
 import Footer from '../src/components/Footer';
 import ContactForm from '../src/components/ContactForm';
-import { Container, Typography } from '@mui/material';
+import { Container, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 function Contact() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <div>
       <Navbar currentPage="contact" />
       <main>
-        <Container maxWidth="md" className="p-12">
+        <Container maxWidth="md" className={isSmallScreen ? "p-4 mt-12" : "p-12"}>
           <Typography 
             component="h1"
             variant="h2"

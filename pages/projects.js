@@ -5,21 +5,24 @@ import Footer from '../src/components/Footer';
 import ProjectGrid from '../src/components/ProjectGrid';
 import FeaturedProject from '../src/components/FeaturedProject';
 import projects from '../src/inputs/projects.json';
-import { Box, Container, Stack, Typography, useTheme } from '@mui/material';
+import { Box, Container, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 function Projects() {
-  const theme = useTheme()
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <div>
       <Navbar currentPage="projects" />
       <main>
-          <FeaturedProject selected_project={projects[4]} />
+          <Container maxWidth="lg">
+            <FeaturedProject selected_project={projects[4]} />
+          </Container>
           <Box className="bgPcb text-white">
           <Container sx={{ py: 8 }} maxWidth="xl" className="pt-0">
             <Stack direction="row" justifyContent="center" alignItems="center" justifyItems="center" spacing={2} sx={{margin: "auto"}} className="py-12">
-              <EngineeringIcon display={{ xs: "none", sm: "none", md: "block" }} sx={{width: 100, height: 100}} />
+              {isSmallScreen ? <></> : <EngineeringIcon display={{ xs: "none", sm: "none", md: "block" }} sx={{width: 100, height: 100}} />}
               <Typography
                 variant="h2"
                 component="h2"
