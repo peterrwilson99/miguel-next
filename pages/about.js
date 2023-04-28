@@ -8,6 +8,7 @@ import {
   Paper,
   Stack,
   Typography,
+  useMediaQuery,
   useTheme,
 } from "@mui/material";
 
@@ -19,6 +20,7 @@ import Interests from "../src/components/Interests";
 
 function About() {
   const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"))
   const miguel_hanging = [
     "/static/images/Capstone-Group-Photo.jpg",
     "/static/images/UVEEC-Team-Photo.jpg",
@@ -27,8 +29,8 @@ function About() {
     <div>
       <Navbar currentPage="about" />
       <main>
-        <Container maxWidth="md" className="p-12">
-          <Paper className="p-8" elevation={15}>
+        <Container maxWidth="md" className={isSmallScreen ? "p-4 my-12" : "p-12"}>
+          <Paper className={isSmallScreen ? "p-2" : "p-8"} elevation={15}>
             <Grid
               container
               spacing={3}
@@ -70,7 +72,7 @@ function About() {
               component="p"
               variant="p"
               align="center"
-              className="text-xl p-12"
+              className={isSmallScreen ? "p-4" : "text-xl p-12"}
               gutterBottom
             >
               A fifth-year computer engineering student with a year of extensive
@@ -97,7 +99,7 @@ function About() {
             pb: 6,
           }}
         >
-          <Container maxWidth="lg" className="p-12">
+          <Container maxWidth="lg" className={isSmallScreen ? "p-4" : "p-12"}>
             <Typography
               component="h2"
               variant="h2"
@@ -107,12 +109,12 @@ function About() {
             >
               Clubs and Employers
             </Typography>
-            <Grid container className="p-8" alignItems="center">
+            <Grid container className={isSmallScreen ? "p-2" : "p-8"} alignItems="center">
               <Grid key="employee-description" item xs={12} sm={6} md={6}>
                 <Typography
                   component="p"
                   variant="p"
-                  className="text-white p-8 text-2xl"
+                  className={isSmallScreen ? "text-white text-xl p-2" : "text-white p-8 text-2xl"}
                   align="center"
                   gutterBottom
                 >
@@ -123,7 +125,7 @@ function About() {
                   I've gained from these teams.
                 </Typography>
               </Grid>
-              <Grid key="past-employers" item xs={12} sm={6} md={6}>
+              <Grid key="past-employers" className={isSmallScreen ? "mt-8" : ""} item xs={12} sm={6} md={6}>
                 <PastEmployers width={250} showButton="true" />
               </Grid>
             </Grid>
@@ -136,7 +138,7 @@ function About() {
             pb: 6,
           }}
         >
-          <Container maxWidth="xl" className="p-12">
+          <Container maxWidth="xl" className={isSmallScreen ? "p-4" : "p-12"}>
             <Typography component="h2" variant="h2" align="center" gutterBottom>
               Outside of the Office
             </Typography>
@@ -158,7 +160,7 @@ function About() {
             pb: 6,
           }}
         >
-          <Container maxWidth="xl" className="p-12">
+          <Container maxWidth="xl" className={isSmallScreen ? "p-4" : "p-12"}>
             <Typography
               component="h2"
               variant="h2"

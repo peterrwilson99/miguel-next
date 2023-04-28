@@ -1,62 +1,40 @@
 
-import { Box, Button, Container, Grid, Paper, Typography } from '@mui/material';
+import { Box, Button, ButtonBase, Container, Grid, Paper, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React from 'react'
 import Link from './Link'
 
 function FeaturedProject(props) {
     const selected_project = props.selected_project;
+    const theme = useTheme();
+    const isMediumScreen = useMediaQuery(theme.breakpoints.down('md'));
     return (
-        <Container sx={{ py: 8 }} maxWidth="xl">
+        <ButtonBase focusRipple className="w-full" href={selected_project.link}>
             <Paper
+                className="my-4 w-full p-4"
                 sx={{
-                    position: 'relative',
-                    backgroundColor: 'grey.800',
-                    color: '#fff',
-                    mb: 4,
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
+                    background: `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(${selected_project.image})`,
                     backgroundPosition: 'center',
-                    backgroundImage: `url(${selected_project.image})`,
-                    minHeight: 400
+                    backgroundSize: 'cover',
+                    borderRadius: 5,
+                    minHeight: 350
                 }}
-                >
-                {/* Increase the priority of the hero background image */}
-                {<img style={{ display: 'none' }} src={selected_project.image} />}
-                <Box
-                    sx={{
-                    position: 'absolute',
-                    top: 0,
-                    bottom: 0,
-                    right: 0,
-                    left: 0,
-                    backgroundColor: 'rgba(0,0,0,.4)',
-                    }}
-                />
-                <Grid container>
-                    <Grid item md={6}>
-                    <Box
-                        sx={{
-                        position: 'relative',
-                        p: { xs: 3, md: 6 },
-                        pr: { md: 0 },
-                        }}
-                    >
-                        <Link href={selected_project.link} style={{ textDecoration: 'none', color: "white"}}>
-                            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                elevation={8}
+            >
+                    <div className={isMediumScreen ? "pt-8 pl-4" :"grid grid-cols-2 pt-8 pl-4"}>
+                        <div className="left">
+                            <Typography variant={isMediumScreen ? "h5" : "h3"} color="white" align="left">
                                 {selected_project.title}
                             </Typography>
-                        </Link>
-                        <Typography variant="h5" color="inherit" paragraph>
-                            {selected_project.preview}
-                        </Typography>
-                        <Link variant="subtitle1" href={selected_project.link}>
-                            {selected_project.date}
-                        </Link>
-                    </Box>
-                    </Grid>
-                </Grid>
+                            <Typography variant="body1" className={isMediumScreen ? "" : "text-lg"} color="white" align="left">
+                                {selected_project.preview}
+                            </Typography>
+                            <Typography variant="body1" className={isMediumScreen ? "" : "text-lg"} color="primary" align="left">
+                                <a href={selected_project.link}>{selected_project.date}</a>
+                            </Typography>
+                        </div>
+                    </div>
             </Paper>
-        </Container>
+        </ButtonBase>
     );
 }
 

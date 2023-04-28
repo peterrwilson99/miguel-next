@@ -18,7 +18,7 @@ function PastEmployers(props) {
                     >
                     <Image src={employer.image} alt={employer.employer} width={props.width ? props.width : 350} height={props.width ? props.width : 350} onClick={() => window.open(employer.link)} />
                 
-                    {props.showButton ? (<Button href={employer.link} variant="outlined" color='primary'>
+                    {props.showButton ? (<Button href={employer.link} variant="outlined" color='primary' size="small">
                     <Typography
                             component="h4"
                             variant="h5"

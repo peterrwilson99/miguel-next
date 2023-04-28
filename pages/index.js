@@ -13,11 +13,13 @@ import Navbar from "/src/components/Navbar";
 import Footer from "/src/components/Footer";
 import projects from "/src/inputs/projects.json";
 import Image from "next/image";
-import { CardMedia, Grid, Paper } from "@mui/material";
+import { CardMedia, Grid, Paper, useMediaQuery } from "@mui/material";
 import FeaturedProject from "../src/components/FeaturedProject";
 
 export default function Index() {
   const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.down('lg'));
   return (
     <div>
       <CssBaseline />
@@ -31,7 +33,7 @@ export default function Index() {
             pb: 6,
           }}
         >
-          <Container maxWidth="md" className="p-12">
+          <Container maxWidth="md" className={isSmallScreen ? "p-4" :"p-12"}>
             <Typography
               component="h1"
               variant="h2"
@@ -78,8 +80,8 @@ export default function Index() {
             pb: 6,
           }}
         >
-          <Container maxWidth="lg" className="p-12">
-            <Paper elevation={15} className="p-12">
+          <Container maxWidth="lg" className={isSmallScreen ? "p-4" :"p-12"}>
+            <Paper elevation={15} className={isSmallScreen ? "p-4" :"p-12"}>
               <Grid container justifyContent="space-between">
                 <Grid item xs={12} sm={12} md={6} className="p-8">
                   <Typography component="h3" variant="h4" gutterBottom>
@@ -127,7 +129,7 @@ export default function Index() {
             pb: 6,
           }}
         >
-          <Container maxWidth="sm" className="p-12">
+          <Container maxWidth="sm" className={isSmallScreen ? "p-4" :"p-12"}>
             <Typography
               component="q"
               variant="caption"
@@ -152,63 +154,43 @@ export default function Index() {
         </Box>
         {/* End of About Me Hype Unit */}
         {/* Project overview section */}
-        <Box
-          sx={{
-            pt: 8,
-            pb: 6,
-          }}
-        >
-          <Container maxWidth="xl" className="p-12">
-            <Grid
-              container
-              spacing={2}
-              justifyContent="center"
-              alignItems="center"
-              alignContent="center"
-            >
-              <Grid item xs={12} sm={12} md={8}>
-                <Carousel
-                  navButtonsAlwaysVisible="true"
-                  animation="slide"
-                  interval={6000}
-                  height={400}
-                >
-                  <FeaturedProject selected_project={projects[0]} />
-                  <FeaturedProject selected_project={projects[1]} />
-                  <FeaturedProject selected_project={projects[4]} />
-                </Carousel>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={4}
-                columnSpacing="center"
-                justifyContent="center"
+        <Container maxWidth="xl" className={isLargeScreen ? "p-4" :"p-12"}>
+          <div className={isLargeScreen ? "m-auto" : "flex justify-center"}>
+            <div className={isLargeScreen ? isSmallScreen ? "text-center m-auto pt-4" : "w-1/2 text-center m-auto pt-4" : "w-1/3"}>
+              <Typography component="h3" variant="h4" gutterBottom>
+                Projects
+              </Typography>
+              <Typography
+                component="p"
+                variant="body1"
+                className="text-xl mb-10"
+                gutterBottom
               >
-                <Typography component="h3" variant="h4" gutterBottom>
-                  Projects
-                </Typography>
-                <Typography
-                  component="p"
-                  variant="body1"
-                  className="text-xl mb-10"
-                  gutterBottom
-                >
-                  Some of my current projects include an open source
-                  programmable load and a Voron 2.4 3D printer. My past
-                  projects include a blood pressure emulator for testing medical
-                  devices, a power distribution board to power an unmanned
-                  surface water vehicle, and a battery tester jig to
-                  automatically test batteries.
-                </Typography>
-                <Button href="/projects" color="primary" variant="contained">
-                  Projects
-                </Button>
-              </Grid>
-            </Grid>
-          </Container>
-        </Box>
+                Some of my current projects include an open source
+                programmable load and a Voron 2.4 3D printer. My past
+                projects include a blood pressure emulator for testing medical
+                devices, a power distribution board to power an unmanned
+                surface water vehicle, and a battery tester jig to
+                automatically test batteries.
+              </Typography>
+              <Button href="/projects" color="primary" variant="contained">
+                Projects
+              </Button>
+            </div>
+            <div className={isLargeScreen ? "w-100" : "w-1/2"}>
+              <Carousel
+                navButtonsAlwaysVisible="true"
+                animation="slide"
+                interval={6000}
+                height={400}
+              >
+                <FeaturedProject selected_project={projects[0]} />
+                <FeaturedProject selected_project={projects[1]} />
+                <FeaturedProject selected_project={projects[4]} />
+              </Carousel>
+            </div>
+          </div>
+        </Container>
         {/* End of Project overview section */}
       </main>
       <Footer />
