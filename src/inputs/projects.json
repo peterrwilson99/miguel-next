@@ -14,7 +14,7 @@
         "title": "Mechatronics Sorting System ",
         "image": "/static/images/mech458-1.jpg",
         "preview": "A conveyor sorting system that can accurately identify and sort four distinct item types in the least amount of time possible.",
-        "description": "A conveyor sorting system that can accurately identify and sort four distinct item types in the shortest time possible with the least amount of errors. Utilized an Tmega2560 microcontroller, four different sensors, and two buttons to control a DC motor, a stepper motor, and an LCD display. Developed an interrupt based stepper motor control algorithm to increase the speed of the system while keeping cpu utilization low.",
+        "description": "A conveyor sorting system that can accurately identify and sort four distinct item types in the shortest time possible with the least amount of errors. Utilized an ATmega2560 microcontroller, four different sensors, and two buttons to control a DC motor, a stepper motor, and an LCD display. Developed an interrupt based stepper motor control algorithm that used a Trapezoidal acceleration curve to increase the speed of the system while keeping CPU utilization low.",
         "date": "April 2023",
         "type": "Professional",
         "carousel": [
