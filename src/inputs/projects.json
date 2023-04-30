@@ -1,5 +1,41 @@
 [
     {
+        "title": "Squat Rack J-Hook Design and Optimization",
+        "image": "/static/images/Mech410-9.png",
+        "preview": "Design and optimization of 3D printed squat rack J-hooks.",
+        "description": " Developed squat rack J-hooks to determine the necessary materials, model, and manufacturing method best to develop alternative options to metal J-hooks. Performed an extensive FEA analysis on 3 separately designed 3D printed J-hooks to determine the optimal part for its strength. Then we analyzed the best material and manufacturing method to use in terms of accessibility, cost, and material usage.",
+        "date": "April 2023",
+        "type": "Professional",
+        "carousel": [
+            "/static/images/Mech410-1.png",
+            "/static/images/Mech410-2.png",
+            "/static/images/Mech410-3.png",
+            "/static/images/Mech410-4.png",
+            "/static/images/Mech410-5.png",
+            "/static/images/Mech410-6.png",
+            "/static/images/Mech410-7.png",
+            "/static/images/Mech410-8.png",
+            "/static/images/Mech410-9.png"
+        ],
+        "id": "squat-rack-j-hook-design-and-optimization",
+        "link": "/projects/squat-rack-j-hook-design-and-optimization"
+    },
+    {
+        "title": "Cytoplasm Segmentation Medical Image Processing",
+        "image": "/static/images/ECE435-1.png",
+        "preview": "A MATLAB script that automatically detects cells and segmented cytoplasms in Pap smear images. ",
+        "description": "Developed an algorithm that processes medical pap smear images to segment and identify individual cell nuclei and cytoplasms based on an academic paper's implementation. Utilized a multitude of MATLAB functions from its imaging processing and statistics toolbox.",
+        "date": "April 2023",
+        "type": "Professional",
+        "carousel": [
+            "/static/images/ECE435-1.png",
+            "/static/images/ECE435-2.png",
+            "/static/images/ECE435-3.png"
+        ],
+        "id": "cytoplasm-segmentation-medical-image-processing",
+        "link": "/projects/cytoplasm-segmentation-medical-image-processing"
+    },
+    {
         "title": "Traffic Light Control System",
         "image": "/static/images/ECE455.jpg",
         "preview": "A traffic light control system to reduce traffic at an intersection.",
