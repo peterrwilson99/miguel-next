@@ -18,8 +18,8 @@ import FeaturedProject from "../src/components/FeaturedProject";
 
 export default function Index() {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-  const isLargeScreen = useMediaQuery(theme.breakpoints.down('lg'));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.down("lg"));
   return (
     <div>
       <CssBaseline />
@@ -33,7 +33,7 @@ export default function Index() {
             pb: 6,
           }}
         >
-          <Container maxWidth="md" className={isSmallScreen ? "p-4" :"p-12"}>
+          <Container maxWidth="md" className={isSmallScreen ? "p-4" : "p-12"}>
             <Typography
               component="h1"
               variant="h2"
@@ -80,8 +80,8 @@ export default function Index() {
             pb: 6,
           }}
         >
-          <Container maxWidth="lg" className={isSmallScreen ? "p-4" :"p-12"}>
-            <Paper elevation={15} className={isSmallScreen ? "p-4" :"p-12"}>
+          <Container maxWidth="lg" className={isSmallScreen ? "p-4" : "p-12"}>
+            <Paper elevation={15} className={isSmallScreen ? "p-4" : "p-12"}>
               <Grid container justifyContent="space-between">
                 <Grid item xs={12} sm={12} md={6} className="p-8">
                   <Typography component="h3" variant="h4" gutterBottom>
@@ -129,7 +129,7 @@ export default function Index() {
             pb: 6,
           }}
         >
-          <Container maxWidth="sm" className={isSmallScreen ? "p-4" :"p-12"}>
+          <Container maxWidth="sm" className={isSmallScreen ? "p-4" : "p-12"}>
             <Typography
               component="q"
               variant="caption"
@@ -154,9 +154,17 @@ export default function Index() {
         </Box>
         {/* End of About Me Hype Unit */}
         {/* Project overview section */}
-        <Container maxWidth="xl" className={isLargeScreen ? "p-4" :"p-12"}>
+        <Container maxWidth="xl" className={isLargeScreen ? "p-4" : "p-12"}>
           <div className={isLargeScreen ? "m-auto" : "flex justify-center"}>
-            <div className={isLargeScreen ? isSmallScreen ? "text-center m-auto pt-4" : "w-1/2 text-center m-auto pt-4" : "w-1/3"}>
+            <div
+              className={
+                isLargeScreen
+                  ? isSmallScreen
+                    ? "text-center m-auto pt-4"
+                    : "w-1/2 text-center m-auto pt-4"
+                  : "w-1/3"
+              }
+            >
               <Typography component="h3" variant="h4" gutterBottom>
                 Projects
               </Typography>
@@ -166,12 +174,12 @@ export default function Index() {
                 className="text-xl mb-10"
                 gutterBottom
               >
-                Some of my current projects include an open source
-                programmable load and a Voron 2.4 3D printer. My past
-                projects include a blood pressure emulator for testing medical
-                devices, a power distribution board to power an unmanned
-                surface water vehicle, and a battery tester jig to
-                automatically test batteries.
+                Some of my current projects include a tactile force
+                sensing robotic gripper arm and an open source programmable DC
+                electronic load. My past projects include a blood pressure
+                emulator for testing medical devices, a power distribution board
+                to power an unmanned surface water vehicle, and a battery tester
+                jig to automatically test batteries.
               </Typography>
               <Button href="/projects" color="primary" variant="contained">
                 Projects
@@ -184,9 +192,9 @@ export default function Index() {
                 interval={6000}
                 height={400}
               >
-                <FeaturedProject selected_project={projects[0]} />
-                <FeaturedProject selected_project={projects[1]} />
-                <FeaturedProject selected_project={projects[4]} />
+                <FeaturedProject selected_project={projects[6]} />
+                <FeaturedProject selected_project={projects[10]} />
+                <FeaturedProject selected_project={projects[7]} />
               </Carousel>
             </div>
           </div>
