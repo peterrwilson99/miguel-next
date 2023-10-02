@@ -78,13 +78,13 @@ function About() {
               className={isSmallScreen ? "p-4" : "text-xl p-12"}
               gutterBottom
             >
-              A graduating computer engineering student with extensive
+              A computer engineering graduate with extensive
               electronics product development experience. In his most recent
               co-op with Starfish Medical, he was exposed to the rigorous
               product development process necessary in medical applications. By
               leading a team at Ergonomyx technologies, he developed a soon to
               be released IoT office equipment product. He is currently working
-              with Salyx Medical while finishing his last term to develop their
+              with Salyx Medical to develop their
               IoT vitals tracker that monitors five crucial health factors of
               the user. Miguel has a passion for electronics and technology,
               especially 3D printing, PCB design, and PC building. In his free
